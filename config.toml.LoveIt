@@ -871,7 +871,7 @@ homePicture = "/blackarch.png"
       [params.page.comment.gitalk]
         enable = true
         owner = "JanU-YieG"
-        repo = "borer"
+        repo = "JanU-YieG.github.io"
         clientId = "67a1cd85e91de1cc2ab9"
         clientSecret = "232b4d1a3d1e7568e843b6d12f9841ae6cbb227f"
         proxy = "https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token"
