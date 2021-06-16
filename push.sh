@@ -1,5 +1,5 @@
 #!/bin/sh
-# hugo -d ./docs
+hugo -d ./docs
 current_branch=$(git branch --show-current)
 # Add changes to git.
 git pull --rebase --autostash origin $current_branch
@@ -14,6 +14,19 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin $current_branch
+
+git checkout site-code
+git checkout main -- public
+cp -Rf public
+rm -r public
+git add .
+msg="rebuilding site $(date)"
+if [ -n "$*" ]; then
+    msg="$*"
+fi
+git commit -m "$msg"
+git push origin site-code
+git checkout main
 
 
 # If a command fails then the deploy stops set -e 
