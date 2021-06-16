@@ -1,5 +1,5 @@
 #!/bin/sh
-hugo -d ./docs
+# hugo -d ./docs
 current_branch=$(git branch --show-current)
 # Add changes to git.
 git pull --rebase --autostash origin $current_branch
