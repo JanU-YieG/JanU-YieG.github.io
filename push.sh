@@ -1,5 +1,4 @@
 #!/bin/sh
-hugo -t LoveIt
 current_branch=$(git branch --show-current)
 # Add changes to git.
 git pull --rebase --autostash origin $current_branch
