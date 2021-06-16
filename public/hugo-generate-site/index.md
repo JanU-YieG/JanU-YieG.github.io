@@ -269,7 +269,7 @@ git submodule
 4. 将写好的文章部署上去：
 
     只需要在终端（第一步我们已经到了网站目录）执行 `./push.sh`命令就行了.
-
+asdfasdf
 5. 总结
     - 打开终端（terminal）
     - 在终端中找到网站目录：`cd` 和 `cd Desktop/chineselawyerjim-site-code`
