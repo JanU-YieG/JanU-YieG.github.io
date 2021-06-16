@@ -16,4 +16,5 @@
 ```
 {{- $commentConfig = dict "id" .Date "title" .Title "clientID" $gitalk.clientId "clientSecret" $gitalk.clientSecret "repo" $gitalk.repo "owner" $gitalk.owner "proxy" $gitalk.proxy "admin" (slice $gitalk.owner) | dict "gitalk" | merge $commentConfig -}}
 ```
-同时在config中添加gitalk中添加proxy="https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token",目前我用的是这个proxy.
+同时在config中添加gitalk中添加proxy="https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token"
+目前我用的是这个proxy.
