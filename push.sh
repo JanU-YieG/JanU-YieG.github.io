@@ -1,5 +1,5 @@
 #!/bin/sh
-hugo -d ./docs
+hugo -t LoveIt
 current_branch=$(git branch --show-current)
 # Add changes to git.
 git pull --rebase --autostash origin $current_branch
@@ -18,9 +18,10 @@ git push origin $current_branch
 
 
 git checkout site-code
-git checkout main -- docs
-cp -Rf docs/* ./
-rm -r docs
+rm -rf *
+git checkout main -- public
+cp -Rf public/* ./
+rm -r public
 git add .
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
