@@ -15,10 +15,12 @@ git commit -m "$msg"
 # Push source and build repos.
 git push origin $current_branch
 
+
+
 git checkout site-code
-git checkout main -- public
-cp -Rf public
-rm -r public
+git checkout main -- docs
+cp -Rf docs
+rm -r docs
 git add .
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
