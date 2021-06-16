@@ -19,7 +19,7 @@ git push origin $current_branch
 
 git checkout site-code
 git checkout main -- docs
-cp -Rf docs
+cp -Rf docs/* ./
 rm -r docs
 git add .
 msg="rebuilding site $(date)"
