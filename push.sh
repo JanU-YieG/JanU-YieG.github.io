@@ -28,7 +28,7 @@ hugo -t LoveIt
 # Go To Public folder
 cd public
 
-# current_branch=$(git branch --show-current)
+current_branch=$(git branch --show-current)
 # echo "$current_branch"
 # Add changes to git.
 git add .
