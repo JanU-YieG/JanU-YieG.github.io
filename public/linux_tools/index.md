@@ -1,6 +1,5 @@
 # Linux 应用
 
-![wp2618249-blackarch-wallpaper.png](https://cdn5.maocdn.cn/img/2021/06/15/wp2618249-blackarch-wallpaper.png)
 ## 经常使用的工具:
 1. goldendict
 2. neovim

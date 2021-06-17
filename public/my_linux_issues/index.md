@@ -1,6 +1,5 @@
 # my linux issues
 
-![UDqYdWk-arch-linux-wallpaper.jpg](https://img.maocdn.cn/img/2021/06/07/UDqYdWk-arch-linux-wallpaper.jpg)
 ## arch sway
 
 **you can see the [sway wiki page](https://github.com/swaywm/sway/wiki)**

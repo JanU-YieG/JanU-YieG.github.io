@@ -6,6 +6,8 @@ draft: false
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description:
+featuredImage: "https://cdn5.maocdn.cn/img/2021/06/18/wp6252831-amoled-linux-wallpapers.png"
+featuredImagePreview: "https://cdn5.maocdn.cn/img/2021/06/18/wp6252831-amoled-linux-wallpapers.png"
 weight: 1
 keywords: ["linux"]
 tags: ["linux"]

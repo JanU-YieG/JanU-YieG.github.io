@@ -6,6 +6,8 @@ draft: false
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description: "我经常使用的一些linux工具"
+featuredImage: "https://cdn5.maocdn.cn/img/2021/06/18/index.jpg"
+featuredImagePreview: "https://cdn5.maocdn.cn/img/2021/06/18/index.jpg"
 weight: 1
 keywords: ["linux", "linux-tools"]
 tags: ["linux", "linux-tools"]
@@ -14,7 +16,6 @@ lightgallery: true
 showTags: true
 summary: "记录一些我日常使用的linux工具"
 ---
-![wp2618249-blackarch-wallpaper.png](https://cdn5.maocdn.cn/img/2021/06/15/wp2618249-blackarch-wallpaper.png)
 ## 经常使用的工具:
 1. goldendict
 2. neovim

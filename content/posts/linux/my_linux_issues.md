@@ -4,6 +4,8 @@ date: 2021-05-27T01:17:47+08:00
 draft: false
 description:
 weight: 1
+featuredImage: "https://cdn5.maocdn.cn/img/2021/06/15/wp2618282-blackarch-wallpaper.png"
+featuredImagePreview: "https://cdn5.maocdn.cn/img/2021/06/15/wp2618282-blackarch-wallpaper.png"
 categories:
 - Linux
 - Hunt
@@ -17,7 +19,6 @@ readingTime: "5"
 showTags: true
 summary: "solved linux issues in the process when i am using linux"
 ---
-![UDqYdWk-arch-linux-wallpaper.jpg](https://img.maocdn.cn/img/2021/06/07/UDqYdWk-arch-linux-wallpaper.jpg)
 ## arch sway
 
 **you can see the [sway wiki page](https://github.com/swaywm/sway/wiki)**
