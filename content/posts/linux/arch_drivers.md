@@ -95,30 +95,30 @@ summary: "Archlinux 必要驱动安装和使用教程"
     ```
 5. bluetoothctl使用
     - 进入蓝牙管理
-    ```
-    bluetoothctl
-    ```
+        ```
+        bluetoothctl
+        ```
     - 连接蓝牙设备
-    ```
-    //选择一个蓝牙接收器
-    //select MAC_address
-    //开启蓝牙
-    power on
-    //选择要连接的设备类型
-    agent on
-    //确认并完成要连接的设备类型
-    default-agent
-    //搜索所有可配对的设备
-    scan on
-    //获取所有设备MAC地址
-    devics
-    //配对设备
-    pair MAC_address
-    //连接
-    connect MAC_address
-    //如果设备不需要配对码(PIN)，可以将设备加入信任列表
-    //trust MAC_address
-    ```
+        ```
+        //选择一个蓝牙接收器
+        //select MAC_address
+        //开启蓝牙
+        power on
+        //选择要连接的设备类型
+        agent on
+        //确认并完成要连接的设备类型
+        default-agent
+        //搜索所有可配对的设备
+        scan on
+        //获取所有设备MAC地址
+        devics
+        //配对设备
+        pair MAC_address
+        //连接
+        connect MAC_address
+        //如果设备不需要配对码(PIN)，可以将设备加入信任列表
+        //trust MAC_address
+        ```
 6. 配置蓝牙开机后自启动
     > 在文件`/etc/bluetooth/main.conf`底部的`[Policy]`下面添加`AutoEnable=true`
     ```
