@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/arch_drivers\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Archlinux, Linux-driver","wordcount":  184 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Archlinux, Linux-driver","wordcount":  747 ,
         "url": "https:\/\/janu-yieg.github.io\/arch_drivers\/","datePublished": "2021-06-17T17:36:43+08:00","dateModified": "2021-06-17T17:36:43+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Archlinux 驱动</h1><h2 class="single-subtitle">必备的Archlinux驱动安装和使用</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/archlinux/"><i class="far fa-folder fa-fw"></i>Archlinux</a>&nbsp;<a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-17">2021-06-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;184 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-17">2021-06-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;747 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -219,7 +219,8 @@ station device-name(wlan0) connect wifi-name
 <h2 id="蓝牙bluetooth">蓝牙(bluetooth)</h2>
 <h4 id="bluez">bluez</h4>
 <ol>
-<li>安装bluez和工具
+<li>
+<p>安装bluez和工具</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -231,10 +232,73 @@ sudo pacman -S bluez-utils
 </code></pre></td></tr></table>
 </div>
 </div></li>
-<li>使用
+<li>
+<p>查看蓝牙驱动<code>btusb</code>内核模块是否加载</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//查看
+modprobe info btusb
+//加载模块
+modprobe btusb
+//或者按照文件名加载
+// insmod filename [args]
+//移除模块
+//modprobe -r module_name
+//或者
+//rmmod module_name
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>查看是否被<code>rfkill</code>禁用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//查看:Hard blocked则去BIOS配置开启，Soft blocked则使用rfkill 打开
+rfkill list
+//打开Soft blocked
+sudo rfkill unblock bluetooth
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>开启bluetooth.service</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//开启
+sudo systemctl start bluetooth.service
+//开机自启动
+sudo systemctl enable bluetooth.service
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>bluetoothctl使用</p>
 <ul>
-<li>进入蓝牙管理</li>
-</ul>
+<li>进入蓝牙管理
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -243,10 +307,87 @@ sudo pacman -S bluez-utils
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">bluetoothctl
 </code></pre></td></tr></table>
 </div>
-</div><ul>
-<li></li>
+</div></li>
+<li>连接蓝牙设备
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//选择一个蓝牙接收器
+//select MAC_address
+//开启蓝牙
+power on
+//选择要连接的设备类型
+agent on
+//确认并完成要连接的设备类型
+default-agent
+//搜索所有可配对的设备
+scan on
+//获取所有设备MAC地址
+devics
+//配对设备
+pair MAC_address
+//连接
+connect MAC_address
+//如果设备不需要配对码(PIN)，可以将设备加入信任列表
+//trust MAC_address
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 </li>
+<li>
+<p>配置蓝牙开机后自启动</p>
+<blockquote>
+<p>在文件<code>/etc/bluetooth/main.conf</code>底部的<code>[Policy]</code>下面添加<code>AutoEnable=true</code></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[Policy]
+AutoEnable = true
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>蓝牙音频输出
+需要先安装<code>pulseaudio-bluetooth</code>,可以使用<code>pavucontrol</code>选择音频的输出设备。如果全局的PulseAudio设置，确保运行守护进程(一般是<code>pulse)用户在</code>lp`组，并且PulseAudio配置中加载蓝牙模块：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">.....
+load-module module-bluetooth-policy
+load-module module-bluetooth-discover
+.....
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ol></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
