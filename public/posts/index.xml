@@ -1,0 +1,84 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Borer&#39;s Blog</title>
+        <link>https://janu-yieg.github.io/posts/</link>
+        <description>All Posts | Borer&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Thu, 17 Jun 2021 18:45:18 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Git常用功能(github)</title>
+    <link>https://janu-yieg.github.io/git/</link>
+    <pubDate>Thu, 17 Jun 2021 18:45:18 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/git/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://cdn5.maocdn.cn/img/2021/06/17/wp3082278-github-wallpapers.jpg" referrerpolicy="no-referrer">
+            </div>git 常用功能使用]]></description>
+</item><item>
+    <title>Archlinux 驱动</title>
+    <link>https://janu-yieg.github.io/arch_drivers/</link>
+    <pubDate>Thu, 17 Jun 2021 17:36:43 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/arch_drivers/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://img.maocdn.cn/img/2021/06/07/728908.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>权威</title>
+    <link>https://janu-yieg.github.io/quanwei/</link>
+    <pubDate>Tue, 15 Jun 2021 11:02:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/quanwei/</guid>
+    <description><![CDATA[大多数人都崇拜权威，却没了自己的判断，而是别人帮其判断了]]></description>
+</item><item>
+    <title>Linux 应用</title>
+    <link>https://janu-yieg.github.io/linux_tools/</link>
+    <pubDate>Fri, 11 Jun 2021 16:45:59 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/linux_tools/</guid>
+    <description><![CDATA[记录一些我日常使用的linux工具]]></description>
+</item><item>
+    <title>Install linux on android</title>
+    <link>https://janu-yieg.github.io/install_linux_system_on_android/</link>
+    <pubDate>Mon, 07 Jun 2021 22:08:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/install_linux_system_on_android/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://img.maocdn.cn/img/2021/06/07/wp5551397-kali-linux-4k-android-wallpapers.jpg" referrerpolicy="no-referrer">
+            </div>Install linux using Andronix Prerequisite:  Android Device (Stock unmodified device, no root or custom recovery required) These apps :  Andronix termux(An android terminal emulator and linux environment app that works directly with no rooting or setup required.) NetHunter-KeX client(connect your kali linux via VNC,can display your kali customing desktop.) Hacker&rsquo;s keyboard Caps to Ctrl(Changing your physical keyboard Caps and Ctrl.)    Installation:  open andronix and choose the linux you want to install.]]></description>
+</item><item>
+    <title>幸福和观念</title>
+    <link>https://janu-yieg.github.io/xing_fu_he_guan_nian/</link>
+    <pubDate>Sat, 05 Jun 2021 14:57:16 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/xing_fu_he_guan_nian/</guid>
+    <description><![CDATA[幸福和观念]]></description>
+</item><item>
+    <title>Somethings about linux</title>
+    <link>https://janu-yieg.github.io/somethings_about_linux/</link>
+    <pubDate>Mon, 31 May 2021 15:01:31 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/somethings_about_linux/</guid>
+    <description><![CDATA[somethings of linux]]></description>
+</item><item>
+    <title>my linux issues</title>
+    <link>https://janu-yieg.github.io/my_linux_issues/</link>
+    <pubDate>Thu, 27 May 2021 01:17:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/my_linux_issues/</guid>
+    <description><![CDATA[solved linux issues in the process when i am using linux]]></description>
+</item><item>
+    <title>My-github-repository-links</title>
+    <link>https://janu-yieg.github.io/my_github_repository_links/</link>
+    <pubDate>Thu, 27 May 2021 01:17:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/my_github_repository_links/</guid>
+    <description><![CDATA[my project&rsquo;s origin code]]></description>
+</item><item>
+    <title>黄石公三略</title>
+    <link>https://janu-yieg.github.io/huangshigongsanlue/</link>
+    <pubDate>Thu, 20 May 2021 18:59:52 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/huangshigongsanlue/</guid>
+    <description><![CDATA[黄石公三略原文]]></description>
+</item></channel>
+</rss>
