@@ -99,7 +99,7 @@
     AutoEnable = true
     ```
 7. 蓝牙音频输出
-    需要先安装`pulseaudio-bluetooth`,可以使用`pavucontrol`选择音频的输出设备。如果全局的PulseAudio设置，确保运行守护进程(一般是`pulse)用户在`lp`组，并且PulseAudio配置中加载蓝牙模块：
+    需要先安装`pulseaudio-bluetooth`,可以使用`pavucontrol`选择音频的输出设备。如果全局的PulseAudio设置，确保运行守护进程(一般是`pulse`)用户在`lp`组，并且PulseAudio配置中加载蓝牙模块：
     ```
     .....
     load-module module-bluetooth-policy
