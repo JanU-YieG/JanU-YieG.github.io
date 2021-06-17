@@ -6,6 +6,8 @@ draft: false
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description: "install kali on android"
+featuredImage: "https://img.maocdn.cn/img/2021/06/07/wp5551397-kali-linux-4k-android-wallpapers.jpg"
+featuredImagePreview: "https://img.maocdn.cn/img/2021/06/07/UDqYdWk-arch-linux-wallpaper.jpg"
 weight: 1
 resources:
 - name: "cover"
@@ -17,7 +19,6 @@ lightgallery: true
 showTags: true
 summary: ""
 ---
-![wp5551397-kali-linux-4k-android-wallpapers.jpg](https://img.maocdn.cn/img/2021/06/07/wp5551397-kali-linux-4k-android-wallpapers.jpg)
 
 ## Install linux using Andronix
 

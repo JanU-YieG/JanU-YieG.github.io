@@ -2,13 +2,15 @@
 title: "Archlinux install"
 date: 2021-05-18T03:47:09+08:00
 draft: false
+featuredImage: "https://cdn5.maocdn.cn/img/2021/06/15/wp2618249-blackarch-wallpaper.png"
+featuredImagePreview: "https://cdn5.maocdn.cn/img/2021/06/15/wp2618249-blackarch-wallpaper.png"
 categories:
 - Linux
 - Hunt
-- Arch
+- Archlinux
 tags:
-- linux
-- arch
+- Linux
+- Archlinux
 keywords:
 - archlinux
 - arch install
