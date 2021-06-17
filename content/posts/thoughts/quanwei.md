@@ -17,7 +17,7 @@ categories: ["Thoughts","杂谈"]
 lightgallery: true
 toc:
   enable: true
-summary: "大多数人都崇拜权威，却没了自己的判断，而是别人帮其判断了"
+summary: "大多数人都崇拜权威，却没了自己的判断，而是别人帮其判断"
 ---
 
 ## 没了思考
