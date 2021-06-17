@@ -4,9 +4,18 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Thu, 17 Jun 2021 17:36:43 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Thu, 17 Jun 2021 18:45:18 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Git常用功能(github)</title>
+    <link>https://janu-yieg.github.io/git/</link>
+    <pubDate>Thu, 17 Jun 2021 18:45:18 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/git/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://cdn5.maocdn.cn/img/2021/06/17/wp3082278-github-wallpapers.jpg" referrerpolicy="no-referrer">
+            </div>git 常用功能使用]]></description>
+</item><item>
     <title>Archlinux 驱动</title>
     <link>https://janu-yieg.github.io/arch_drivers/</link>
     <pubDate>Thu, 17 Jun 2021 17:36:43 &#43;0800</pubDate>
@@ -73,12 +82,5 @@
     <author>Author</author>
     <guid>https://janu-yieg.github.io/huangshigongsanlue/</guid>
     <description><![CDATA[黄石公三略原文]]></description>
-</item><item>
-    <title>权书 苏洵 〔宋代〕</title>
-    <link>https://janu-yieg.github.io/suxunquanshu/</link>
-    <pubDate>Wed, 19 May 2021 13:01:12 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/suxunquanshu/</guid>
-    <description><![CDATA[苏洵 权书 原文]]></description>
 </item></channel>
 </rss>

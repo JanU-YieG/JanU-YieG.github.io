@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://janu-yieg.github.io/git/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/arch_drivers/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/quanwei/</loc><lastmod>2021-06-15T11:02:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/linux_tools/</loc><lastmod>2021-06-11T16:45:59&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -20,14 +21,19 @@
             <loc>https://janu-yieg.github.io/xinxue/</loc><lastmod>2021-02-24T13:22:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/what-should-know-about-shell-script/</loc><lastmod>2021-01-20T10:01:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/hugo-generate-site/</loc><lastmod>2021-01-08T11:18:55&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://janu-yieg.github.io/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/categories/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/categories/git/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/tags/git/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/tags/git-cherry-pick/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/tags/git-rebase/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/tags/git-usage/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/posts/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/tags/</loc><lastmod>2021-06-17T18:45:18&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/tags/archlinux/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/categories/archlinux/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/categories/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/categories/linux/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/tags/linux-driver/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/posts/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/tags/</loc><lastmod>2021-06-17T17:36:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/tags/thoughts/</loc><lastmod>2021-06-15T11:02:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/categories/thoughts/</loc><lastmod>2021-06-15T11:02:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://janu-yieg.github.io/tags/%E6%9D%82%E8%B0%88/</loc><lastmod>2021-06-15T11:02:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
