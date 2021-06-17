@@ -1,6 +1,5 @@
 # Install linux on android
 
-![wp5551397-kali-linux-4k-android-wallpapers.jpg](https://img.maocdn.cn/img/2021/06/07/wp5551397-kali-linux-4k-android-wallpapers.jpg)
 
 ## Install linux using Andronix
 
