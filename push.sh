@@ -31,7 +31,7 @@ cd public
 current_branch=$(git branch --show-current)
 # echo "$current_branch"
 # Add changes to git.
-git add .
+git add -f .
 
 # Commit changes.
 msg="rebuilding site $(date)"
