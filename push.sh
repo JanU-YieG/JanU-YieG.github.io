@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 sudo rm -rf public
-git clone -b site-code git@github.com:JanU-YieG/JanU-YieG.github.io.git public
+# git clone -b site-code git@github.com:JanU-YieG/JanU-YieG.github.io.git public
 # git submodule sync --recursive
 # git submodule update --init --recursive
 hugo -t LoveIt
