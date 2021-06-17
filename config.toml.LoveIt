@@ -167,7 +167,7 @@ homePicture = "/blackarch.png"
           enable = true
           # enable = false
           # special amount of posts in each home posts page
-          paginate = 8
+          paginate = 4
       # Social config in home page
       [languages.en.params.social]
         GitHub = "JanU-YieG"
