@@ -1,6 +1,9 @@
 #!/bin/sh
-git submodule sync --recursive
-git submodule update --init --recursive
+set -e
+sudo rm -rf public
+git clone -b site-code git@github.com:JanU-YieG/JanU-YieG.github.io.git public
+# git submodule sync --recursive
+# git submodule update --init --recursive
 hugo -t LoveIt
 current_branch=$(git branch --show-current)
 # Add changes to git.
@@ -21,7 +24,6 @@ git push origin $current_branch
 
 ###############Deploy##############
 
-set -e
 # If a command fails then the deploy stops set -e 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
