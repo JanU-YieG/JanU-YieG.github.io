@@ -133,3 +133,7 @@ summary: "Archlinux 必要驱动安装和使用教程"
     load-module module-bluetooth-discover
     .....
     ```
+8. `pavucontrol`工具选择音频的输出设备
+    ```
+    sudo pacman -S pavucontrol
+    ```
