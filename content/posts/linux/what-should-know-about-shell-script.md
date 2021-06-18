@@ -1,8 +1,7 @@
 ---
-title: "What You Should Know About Shell Script \n(Continuously updated...)"
+title: "bash shell编写基础"
 date: 2021-01-20T10:01:02+08:00
 draft: false
-slug: slug1
 description:
 weight: 1
 categories:

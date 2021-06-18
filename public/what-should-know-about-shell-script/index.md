@@ -1,5 +1,4 @@
-# What You Should Know About Shell Script 
-(Continuously updated...)
+# bash shell编写基础
 
 ![wp2618273-blackarch-wallpaper.jpg](https://cdn5.maocdn.cn/img/2021/06/15/wp2618273-blackarch-wallpaper.jpg)
 ## 一.基本语法：
