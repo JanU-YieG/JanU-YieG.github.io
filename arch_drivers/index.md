@@ -37,6 +37,7 @@
     ```
     sudo pacman -S bluez
     sudo pacman -S bluez-utils
+    sudo pacman -S bluez-tools
     ```
 2. 查看蓝牙驱动`btusb`内核模块是否加载
     ```
