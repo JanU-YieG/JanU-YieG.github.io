@@ -46,6 +46,7 @@
 33. ctags
 33. hddtemp
 34. lm_sensors
+35. wechat-uos
 
 ## Linux桌面环境(i3(X) OR sway(wayland/xwayland))
 ### i3(X)
