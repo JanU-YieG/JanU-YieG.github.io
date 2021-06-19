@@ -112,4 +112,10 @@ LC_MEASUREMENT="en_US.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
 LC_ALL="en_US.UTF-8"
 ```
+**issue**:
+
+sway中fcitx5中文输入法在alacritty中不显示界面的问题
+**resolved**:
+
+在sway配置文件中启动alacritty使用`WAYLAND_DISPLAY=x11`
 

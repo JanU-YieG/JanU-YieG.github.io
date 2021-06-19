@@ -17,7 +17,6 @@ keywords:
 showTags: true
 summary: "Install arch-linux(Xfce.UEFI) and integral things from USB-Live"
 ---
-![728908.jpg](https://img.maocdn.cn/img/2021/06/07/728908.jpg)
 ## Make a U boot disk
 
 **notes:**
