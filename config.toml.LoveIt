@@ -78,14 +78,6 @@ homePicture = "/blackarch.png"
         # title = "All documentation"
         # weight = 4
       [[languages.en.menu.main]]
-        identifier = "rust"
-        pre = "<i class='fab fa-rust'></i>"
-        post = ""
-        name = "Rust"
-        url = "https://www.rust-lang.org/"
-        title = "Rust"
-        weight = 5
-      [[languages.en.menu.main]]
         identifier = "links"
         pre = "<i class='fas fa-paperclip'></i>"
         post = ""
@@ -109,6 +101,14 @@ homePicture = "/blackarch.png"
         url = "https://github.com/JanU-YieG"
         title = "GitHub"
         weight = 8
+      [[languages.en.menu.main]]
+        identifier = "rust"
+        pre = "<i class='fab fa-rust'></i>"
+        post = ""
+        name = ""
+        url = "https://www.rust-lang.org/"
+        title = "Rust"
+        weight = 9
     [languages.en.params]
       # site description
       description = "个人分享记录"
