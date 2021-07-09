@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/git\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "git, git-usage, git rebase, git cherry-pick","wordcount":  81 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "git, git-usage, git rebase, git cherry-pick","wordcount":  151 ,
         "url": "https:\/\/janu-yieg.github.io\/git\/","datePublished": "2021-06-17T18:45:18+08:00","dateModified": "2021-06-17T18:45:18+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,7 +118,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Git常用功能(github)</h1><h2 class="single-subtitle">常用的git功能</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/git/"><i class="far fa-folder fa-fw"></i>Git</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-17">2021-06-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;81 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-17">2021-06-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;151 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -147,6 +147,15 @@
             <li><a href="#git-rebase">git rebase</a></li>
             <li><a href="#git-cherry-pick">git cherry-pick</a></li>
             <li><a href="#git-submodule">git submodule</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#git常见问题">Git常见问题</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#the-remote-end-hung-up-unexpectedly"><code>the remote end hung up unexpectedly</code></a></li>
           </ul>
         </li>
       </ul>
@@ -183,7 +192,15 @@ git submodule
 <h4 id="git-commit">git commit</h4>
 <h4 id="git-rebase">git rebase</h4>
 <h4 id="git-cherry-pick">git cherry-pick</h4>
-<h4 id="git-submodule">git submodule</h4></div><div class="post-footer" id="post-footer">
+<h4 id="git-submodule">git submodule</h4>
+<h2 id="git常见问题">Git常见问题</h2>
+<h4 id="the-remote-end-hung-up-unexpectedly"><code>the remote end hung up unexpectedly</code></h4>
+<p><strong>Resolve</strong>******</p>
+<ul>
+<li>问题原因：推送文件太大</li>
+<li>解决：修改设置git config文件的postBuffer的大小（500MB）
+&ndash; git config &ndash;global http.postBuffer 524288000</li>
+</ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

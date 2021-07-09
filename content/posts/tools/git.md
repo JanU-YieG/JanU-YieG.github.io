@@ -54,3 +54,11 @@ git submodule
 #### git cherry-pick
 
 #### git submodule
+
+## Git常见问题
+#### `the remote end hung up unexpectedly`
+**Resolve********
+- 问题原因：推送文件太大
+- 解决：修改设置git config文件的postBuffer的大小（500MB）
+    -- git config --global http.postBuffer 524288000
+
