@@ -4,9 +4,16 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Thu, 17 Jun 2021 18:45:18 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Wed, 14 Jul 2021 11:12:06 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Markdown常用语法</title>
+    <link>https://janu-yieg.github.io/markdown/</link>
+    <pubDate>Wed, 14 Jul 2021 11:12:06 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/markdown/</guid>
+    <description><![CDATA[markdown常用语法]]></description>
+</item><item>
     <title>Git常用功能(github)</title>
     <link>https://janu-yieg.github.io/git/</link>
     <pubDate>Thu, 17 Jun 2021 18:45:18 &#43;0800</pubDate>
@@ -81,12 +88,5 @@
     <author>Author</author>
     <guid>https://janu-yieg.github.io/my_github_repository_links/</guid>
     <description><![CDATA[my project&rsquo;s origin code]]></description>
-</item><item>
-    <title>黄石公三略</title>
-    <link>https://janu-yieg.github.io/huangshigongsanlue/</link>
-    <pubDate>Thu, 20 May 2021 18:59:52 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/huangshigongsanlue/</guid>
-    <description><![CDATA[黄石公三略原文]]></description>
 </item></channel>
 </rss>
