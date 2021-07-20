@@ -58,6 +58,7 @@ XF86AddFavorite;XF86ApplicationLeft;XF86ApplicationRight;XF86AudioMedia;XF86Audi
 - ffsend : 
 - flameshot : 
 - hollwood : 
+- xclip: If you are using Linux, you need to install xclip if using X11 or wl-copy and wl-paste if using Wayland.
 
 ### systemd-boot (efi,boot,arch)
 A simple UEFI boot manager which execute configured EFI images.
