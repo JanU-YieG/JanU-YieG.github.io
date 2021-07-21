@@ -4,7 +4,14 @@
         <link>https://janu-yieg.github.io/posts/</link>
         <description>All Posts | Borer&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Wed, 14 Jul 2021 11:12:06 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Wed, 21 Jul 2021 09:55:10 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Docker</title>
+    <link>https://janu-yieg.github.io/docker/</link>
+    <pubDate>Wed, 21 Jul 2021 09:55:10 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/docker/</guid>
+    <description><![CDATA[Docker常用命令解释及其注意事项]]></description>
+</item><item>
     <title>Markdown常用语法</title>
     <link>https://janu-yieg.github.io/markdown/</link>
     <pubDate>Wed, 14 Jul 2021 11:12:06 &#43;0800</pubDate>
@@ -79,12 +86,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://cdn5.maocdn.cn/img/2021/06/15/wp2618282-blackarch-wallpaper.png" referrerpolicy="no-referrer">
             </div>solved linux issues in the process when i am using linux]]></description>
-</item><item>
-    <title>My-github-repository-links</title>
-    <link>https://janu-yieg.github.io/my_github_repository_links/</link>
-    <pubDate>Thu, 27 May 2021 01:17:47 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/my_github_repository_links/</guid>
-    <description><![CDATA[my project&rsquo;s origin code]]></description>
 </item></channel>
 </rss>
