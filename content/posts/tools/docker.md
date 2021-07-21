@@ -277,13 +277,10 @@ $ docker run -d -P \
 
 ### docker-compose
 
-#### Compose 命令说明
-- [docker-compose 命令说明](https://yeasy.gitbook.io/docker_practice/compose/commands)
-#### Compose 模板文件
+#### Compose 相关链接
+- [Compose 命令说明](https://yeasy.gitbook.io/docker_practice/compose/commands)
 - [Compose 模板文件](https://yeasy.gitbook.io/docker_practice/compose/compose_file)
-#### Compose 官方文档
 - [Compose 官方文档](https://docs.docker.com/compose/)
-#### Compose file官方文档
 - [Compose file 官方文档](https://docs.docker.com/compose/compose-file/)
 
 ### Dockerfile
