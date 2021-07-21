@@ -28,10 +28,12 @@ summary: "Docker常用命令解释及其注意事项"
 <!--more-->
 ## Docker介绍
 Docker takes away repetitive, mundane configuration tasks and is used throughout the development lifecycle for fast, easy and portable application development - desktop and cloud. Docker’s comprehensive end to end platform includes UIs, CLIs, APIs and security that are engineered to work together across the entire application delivery lifecycle.
+
 Docker 使用 Google 公司推出的 Go 语言 进行开发实现，基于 Linux 内核的 cgroup，namespace，以及
 OverlayFS 类的 Union FS 等技术，对进程进行封装隔离，属于
 操作系统层面的虚拟化技术。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器.
 > 命令都可以使用 --help查看帮助
+> [Reference](https://docs.docker.com/reference/)
 
 ## Docker概念及命令
 
@@ -279,6 +281,10 @@ $ docker run -d -P \
 - [docker-compose 命令说明](https://yeasy.gitbook.io/docker_practice/compose/commands)
 #### Compose 模板文件
 - [Compose 模板文件](https://yeasy.gitbook.io/docker_practice/compose/compose_file)
+#### Compose 官方文档
+- [Compose 官方文档](https://docs.docker.com/compose/)
+#### Compose file官方文档
+- [Compose file 官方文档](https://docs.docker.com/compose/compose-file/)
 
 ### Dockerfile
 
