@@ -14,7 +14,7 @@ featuredImagePreview: "https://cdn5.maocdn.cn/img/2021/06/17/wp3082255-github-wa
 weight: 1
 keywords: ["git", "git-usage","git rebase","git cherry-pick"]
 tags: ["git", "git-usage","git rebase","git cherry-pick"]
-categories: ["Git"]
+categories: ["Git","Hunt"]
 lightgallery: true
 toc:
   enable: true
