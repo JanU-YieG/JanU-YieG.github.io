@@ -38,6 +38,7 @@ git rebase
 git cherry-pick
 git submodule
 git lfs
+git clone
 ```
 
 ## Git常用命令简述
@@ -80,6 +81,8 @@ git lfs
     git commit -m "xxxx"
     git push origin main
     ```
+#### git clone
+- git clone -b branchname xxxxx
 
 ## Git常见问题
 #### `the remote end hung up unexpectedly`
