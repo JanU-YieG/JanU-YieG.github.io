@@ -91,7 +91,7 @@ OverlayFS 类的 Union FS 等技术，对进程进行封装隔离，属于
 ###### docker container rm
 - 说明：删除容器
 
-###### docker container ls
+###### docker container ls || docker ps
 - 说明：查看正在运行的容器
 - 注意：docker container ls -a 查看所有状态的容器
 

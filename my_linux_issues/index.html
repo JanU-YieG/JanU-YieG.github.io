@@ -9,8 +9,8 @@
 <meta property="og:description" content="solved linux issues in the process when i am using linux" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://janu-yieg.github.io/my_linux_issues/" /><meta property="og:image" content="https://janu-yieg.github.io/borer.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-27T01:17:47&#43;08:00" />
-<meta property="article:modified_time" content="2021-05-27T01:17:47&#43;08:00" />
+<meta property="article:published_time" content="2021-05-27T01:17:47+08:00" />
+<meta property="article:modified_time" content="2021-05-27T01:17:47+08:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://janu-yieg.github.io/borer.png"/>
@@ -142,17 +142,17 @@
 <p><strong>issue:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">[sway-1.0-beta.2/sway/main.c:209] Unable to drop root (we shouldn&#39;t be able to restore it after setuid), refusing to start
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[sway-1.0-beta.2/sway/main.c:209] Unable to drop root (we shouldn&#39;t be able to restore it after setuid), refusing to start
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>solved:</strong>
 write the following code in your <code>.bash_profile</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -161,7 +161,7 @@ write the following code in your <code>.bash_profile</code></p>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">if [ -z &#34;${XDG_RUNTIME_DIR}&#34; ]; then
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">if [ -z &#34;${XDG_RUNTIME_DIR}&#34; ]; then
     export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
     if [ ! -d &#34;${XDG_RUNTIME_DIR}&#34; ]; then
     mkdir &#34;${XDG_RUNTIME_DIR}&#34;
@@ -176,31 +176,31 @@ can not change brightness
 you can use(please use the tools based the wayland protocol) the light to change brightness</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo light -U 10
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo light -U 10
 sudo light -A 10
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>issue</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">Could not find the Qt platform plugin “wayland”
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Could not find the Qt platform plugin “wayland”
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>solved</strong>:
 add environment variables into /etc/environment:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">QT_QPT_PLATFORM=wayland
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">QT_QPT_PLATFORM=wayland
 </code></pre></td></tr></table>
 </div>
 </div><p>and install:
@@ -212,20 +212,20 @@ qt5-wayland</p>
 open goldendict use :</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">QT_QPT_PLATFORM=xcb goldendict
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">QT_QPT_PLATFORM=xcb goldendict
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>issue</strong>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">[drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring sdma0 timeout, signaled seq=239, emitted seq=240
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring sdma0 timeout, signaled seq=239, emitted seq=240
 drm:amdgpu_job_timrout ring gfx timeout but soft recovered
 </code></pre></td></tr></table>
 </div>
@@ -236,13 +236,13 @@ linux-firmware: 20210315.3568f96  2
 linux: 5.12.2-arch1-1</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo downgrade linux
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">sudo downgrade linux
 sudo downgrade linux-firmware
 sudo downgrade mesa
 //sudo pacman -U /var/cache/pacman/pkg/&lt;your.zst&gt;
@@ -251,12 +251,12 @@ sudo downgrade mesa
 </div><p>If your $esp is not /boot,and then your systemd-boot grub has been bad, then:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">cp /boot/initramfs-linux-fallback.img $esp/
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">cp /boot/initramfs-linux-fallback.img $esp/
 cp /boot/initramfs-linux.img $esp/
 cp /boot/vmlinuz-linux $esp/
 </code></pre></td></tr></table>
@@ -265,12 +265,12 @@ cp /boot/vmlinuz-linux $esp/
 <p><strong>issue</strong>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">Failed to get backlight or LED device &#39;backlight:acpi_video0&#39;: No such device
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Failed to get backlight or LED device &#39;backlight:acpi_video0&#39;: No such device
 systemd-backlight@backlight:acpi_video0.service: Failed with result &#39;exit-code&#39;.
 Failed to start Load/Save Screen Backlight Brightness of backlight:acpi_video0.
 </code></pre></td></tr></table>
@@ -279,26 +279,26 @@ Failed to start Load/Save Screen Backlight Brightness of backlight:acpi_video0.
 adding the <code>acpi_backlight=vendor</code> in /etc/devault/grub into the line <code>GRUB_CMDLINE_LINUX_DEFAULT=</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">GRUB_CMDLINE_LINUX_DEFAULT=&#34;acpi_backlight=vendor quiet&#34;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">GRUB_CMDLINE_LINUX_DEFAULT=&#34;acpi_backlight=vendor quiet&#34;
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>issue</strong>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">Failed to set default locale
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Failed to set default locale
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>resolved</strong>:
 adding the following code to change the valiables about locale:<code>login shell</code> or <code>/etc/enviroment</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -314,7 +314,7 @@ adding the following code to change the valiables about locale:<code>login shell
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">LANG=en_US.UTF-8
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">LANG=en_US.UTF-8
 LC_CTYPE=&#34;en_US.UTF-8&#34;
 LC_NUMERIC=&#34;en_US.UTF-8&#34;
 LC_TIME=&#34;en_US.UTF-8&#34;

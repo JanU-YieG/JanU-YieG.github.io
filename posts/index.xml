@@ -4,7 +4,16 @@
         <link>https://janu-yieg.github.io/posts/</link>
         <description>All Posts | Borer&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Wed, 21 Jul 2021 09:55:10 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Thu, 29 Jul 2021 13:58:06 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Cs Problems</title>
+    <link>https://janu-yieg.github.io/cs-problems/</link>
+    <pubDate>Thu, 29 Jul 2021 13:58:06 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/cs-problems/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://cdn5.maocdn.cn/img/2021/07/29/wp7334739-mix-colours-wallpapers.jpg" referrerpolicy="no-referrer">
+            </div>专业相关的问题]]></description>
+</item><item>
     <title>Docker</title>
     <link>https://janu-yieg.github.io/docker/</link>
     <pubDate>Wed, 21 Jul 2021 09:55:10 &#43;0800</pubDate>
@@ -77,14 +86,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://cdn5.maocdn.cn/img/2021/06/18/wp6252831-amoled-linux-wallpapers.png" referrerpolicy="no-referrer">
             </div>somethings of linux]]></description>
-</item><item>
-    <title>my linux issues</title>
-    <link>https://janu-yieg.github.io/my_linux_issues/</link>
-    <pubDate>Thu, 27 May 2021 01:17:47 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/my_linux_issues/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://cdn5.maocdn.cn/img/2021/06/15/wp2618282-blackarch-wallpaper.png" referrerpolicy="no-referrer">
-            </div>solved linux issues in the process when i am using linux]]></description>
 </item></channel>
 </rss>
