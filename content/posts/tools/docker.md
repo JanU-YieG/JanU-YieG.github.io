@@ -9,8 +9,8 @@ authorLink: "https://github.com/JanU-YieG"
 description: Docker常用命令解释及其注意事项
 hiddenFromHomePage: false
 hiddenFromSearch: false
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: "https://cdn5.maocdn.cn/img/2021/08/05/docker-facebook.png"
+featuredImagePreview: "https://cdn5.maocdn.cn/img/2021/08/05/docker-facebook.png"
 weight: 1
 keywords: ["docker"]
 tags: ["docker"]

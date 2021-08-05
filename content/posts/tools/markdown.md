@@ -9,8 +9,8 @@ authorLink: "https://github.com/JanU-YieG"
 description: markdown常用语法
 hiddenFromHomePage: false
 hiddenFromSearch: false
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: "https://s3.jpg.cm/2021/08/05/IAPdmX.jpg"
+featuredImagePreview: "https://s3.jpg.cm/2021/08/05/IAPdmX.jpg"
 weight: 1
 resources:
 - name: ""
