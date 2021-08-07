@@ -72,20 +72,57 @@ summary: "go 语言基础语法"
 
 
 
+## 程序结构
+1. 声明
+    - 方法
+        ```
+        s := ""
+        var s string
+        var s = ""
+        var s string = ""
+        var a,b,c,s = 1,3.0,true,"string"
+        a,b,c,s := 1,3.0,true,"string"(
+                简短声明;
+                其中至少要声明一个变量;
+                只能用于在函数内部局部变量的声明;
+                当其中有声明过的变量时执行赋值操作；
+                只对同级词法域声明过的变量才和赋值操作等价，
+                否则简短声明将重新创建一个新的变量而不是在原变量基础上赋值
+                )
+        ```
+    - 说明
+2. hh
+
 
 
 
 
 ## 其他
-#### _
+#### `_`
 - blank identifier
-#### 声明变量
--
-    ```
-    s := ""
-    var s string
-    var s = ""
-    var s string = ""
-    ```
+
 #### fmt.Printf
 - %d,%x-%o-%b,%f-%g-%e,%t,%c,%s,%q,%v(==fmt.Println),%T,%%
+
+## 关键字
+- 语法
+    ```
+    break,case,chan,const,continue,default,defer,else,fallthrough,for,func,go,goto,if,import,interface,map,package,range,return,select,struct,switch,type,var
+    ```
+- 内建常量
+    ```
+    true,false,iota,nil
+    ```
+- 内建类型
+    ```
+    int,int8,int16,int32,int64
+    uint,uint8,uint16,uint32,uint64,uintptr
+    float32,float64,complex128,complex64
+    bool,byte,rune,string,error
+    ```
+- 内建函数
+    ```
+    make,len,cap,new,append,copy,close,delete
+    complex,real,imag
+    panic,recover
+    ```
