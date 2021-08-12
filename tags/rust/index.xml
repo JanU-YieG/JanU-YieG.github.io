@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Rust - Tag - Borer&#39;s Blog</title>
+        <link>https://janu-yieg.github.io/tags/rust/</link>
+        <description>Rust - Tag - Borer&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Thu, 12 Aug 2021 11:53:01 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/tags/rust/" rel="self" type="application/rss+xml" /><item>
+    <title>Basic Rust</title>
+    <link>https://janu-yieg.github.io/basic-rust/</link>
+    <pubDate>Thu, 12 Aug 2021 11:53:01 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/basic-rust/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://s3.jpg.cm/2021/08/12/IXvMjt.jpg" referrerpolicy="no-referrer">
+            </div>rust basic semantics]]></description>
+</item></channel>
+</rss>
