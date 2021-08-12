@@ -16,7 +16,7 @@ resources:
 - name: ""
   src: "xx.jpg"
 keywords: ["Rust basic", "Rust"]
-tags: ["Rust", "Rust Basix"]
+tags: ["Rust", "Rust Basic"]
 categories: ["Rust"]
 lightgallery: true
 toc:
