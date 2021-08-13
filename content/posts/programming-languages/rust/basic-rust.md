@@ -87,5 +87,11 @@ summary: "Rust Basic"
 - `arms`
 - break ...;
 
+## Ownership
+- Both the stack and the heap are parts of memory that are available to your code to use at runtime,but they are structured in different ways.
+- `Stack`:adding data is called `pushing onto the stack`,and removing data is called `popping off the stack`.known,fixed size.
+- `Heap`:allocating.unknown.pointer.
+- `pointer` is a known,fixed size.store the pointer on the stack ,but when you want the actual data,you must follow the pointer.
+
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
