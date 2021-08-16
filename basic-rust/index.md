@@ -65,7 +65,45 @@
 - `Stack`:adding data is called `pushing onto the stack`,and removing data is called `popping off the stack`.known,fixed size.
 - `Heap`:allocating.unknown.pointer.
 - `pointer` is a known,fixed size.store the pointer on the stack ,but when you want the actual data,you must follow the pointer.
+- Ownership Rules
+    - Each value in Rust has a variable that's called its owner.
+    - There can only be one owner at a time.
+    - When the owner goes out of scope, the value will be dropped.
+- `move`
+- `clone`
+- stack-only data:copy
+- `Copy` trait
+- `Drop` trait
+- `References``&`
+    - never have ownership---function parameters---->`Borrowing`
+    - In a particular scope , you can have either one mutable reference or any number of immutable references.-->solved data race-->curly brackets can create a new scope.
+    - References must always be valid.
+    - A reference's scope starts from where it is introduced and continues through the last time that reference is used.
+- `Dereferencing``*`
+- `refer to` and `onw`
+- `Slice Type`
+    - have no ownership
+    - Slices let you reference a contiguous sequence of elements in a `collection` rather than the whole collection.
+    - The slice data structure stores the starting position and the length of the slice,which correspondes to ending_index minus starting_index.
+
+## Using Structs to Structure Related Data
+- create custom types.
+- `Shorthand`
+- `tuple structs`--->tuple struct instances behave like tuples.(destructure,`.`)
+- Each struct you define is its own type.
+- `unit-like structs`--->behave similary to `()`.
+- `Lifetimes` specify reference in struct.
+- `derive` annotation can add useful behavior to our custom types.
+- `method`
+    - defined within the context of a struct(or an enum or a trait object),and their first parameter is always `self`.
+    - `automatic referencing and dereferencing`
+    - `Associated functions`:Don't take `self` as a parameter.Calling associated function use `::`.This function is namespaced by the struct.
+    - Multiple `impl` Blocks
+
+## Enums and Pattern Matching
+- Enums can create custom types.
 
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
+- [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
 
