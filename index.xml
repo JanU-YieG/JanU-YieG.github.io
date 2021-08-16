@@ -4,9 +4,18 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Mon, 16 Aug 2021 22:10:21 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Mon, 16 Aug 2021 22:21:09 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>共产党宣言</title>
+    <link>https://janu-yieg.github.io/gongchandangxuanyan/</link>
+    <pubDate>Mon, 16 Aug 2021 22:21:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/gongchandangxuanyan/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://s3.jpg.cm/2021/08/16/IcCC4C.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>The Declaration of Independence</title>
     <link>https://janu-yieg.github.io/dulixuanyan/</link>
     <pubDate>Mon, 16 Aug 2021 22:10:21 &#43;0800</pubDate>
@@ -85,14 +94,5 @@
     <author>Author</author>
     <guid>https://janu-yieg.github.io/quanwei/</guid>
     <description><![CDATA[大多数人都崇拜权威，却没了自己的判断，而是别人帮其判断]]></description>
-</item><item>
-    <title>Linux 应用</title>
-    <link>https://janu-yieg.github.io/linux_tools/</link>
-    <pubDate>Fri, 11 Jun 2021 16:45:59 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/linux_tools/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://cdn5.maocdn.cn/img/2021/06/18/index.jpg" referrerpolicy="no-referrer">
-            </div>记录一些我日常使用的linux工具]]></description>
 </item></channel>
 </rss>
