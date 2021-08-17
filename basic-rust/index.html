@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/basic-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  493 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  598 ,
         "url": "https:\/\/janu-yieg.github.io\/basic-rust\/","datePublished": "2021-08-12T11:53:01+08:00","dateModified": "2021-08-12T11:53:01+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,7 +118,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Rust</h1><h2 class="single-subtitle">The basic of rust-lang</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;493 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;598 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -140,7 +140,9 @@
     <li><a href="#control-flow">Control Flow</a></li>
     <li><a href="#ownership">Ownership</a></li>
     <li><a href="#using-structs-to-structure-related-data">Using Structs to Structure Related Data</a></li>
-    <li><a href="#enums-and-pattern-matching">Enums and Pattern Matching</a></li>
+    <li><a href="#enums">Enums</a></li>
+    <li><a href="#option-enum">Option enum</a></li>
+    <li><a href="#match">Match</a></li>
     <li><a href="#appendix">Appendix</a></li>
   </ul>
 </nav></div>
@@ -309,9 +311,25 @@ let spaces = spaces.len();
 </ul>
 </li>
 </ul>
-<h2 id="enums-and-pattern-matching">Enums and Pattern Matching</h2>
+<h2 id="enums">Enums</h2>
 <ul>
 <li>Enums can create custom types.</li>
+<li>Each variant can have diferent types and amounts of associated data.</li>
+<li>you can put any kind of data inside an enum variant.</li>
+<li>we can also define methods on enums like struct.</li>
+</ul>
+<h2 id="option-enum">Option enum</h2>
+<ul>
+<li>enum defined by the standard library.</li>
+<li>a value could be something or it could be nothing.</li>
+<li>included in the prelude:you don&rsquo;t need to bring it into scope explicitly,you can use <code>Some</code> and <code>None</code> derectly without the <code>::</code> prefix.</li>
+<li><code>Option&lt;T&gt;</code> enum is still just a regular enum,and <code>Some&lt;T&gt;</code> and <code>None</code> are still variants of type <code>Option&lt;T&gt;</code></li>
+<li><code>&lt;T&gt;</code> is a generic type parameter.</li>
+<li>useing <code>None</code> ,you need to tell Rust what type of <code>Option&lt;T&gt;</code> we have.</li>
+</ul>
+<h2 id="match">Match</h2>
+<ul>
+<li></li>
 </ul>
 <h2 id="appendix">Appendix</h2>
 <ul>
