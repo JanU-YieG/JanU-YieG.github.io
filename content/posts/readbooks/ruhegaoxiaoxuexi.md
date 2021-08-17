@@ -9,8 +9,8 @@ authorLink: "https://github.com/JanU-YieG"
 description:
 hiddenFromHomePage: false
 hiddenFromSearch: false
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: "https://s3.jpg.cm/2021/08/17/IcxxCR.jpg"
+featuredImagePreview: "https://s3.jpg.cm/2021/08/17/IcxxCR.jpg"
 weight: 1
 resources:
 - name: ""
