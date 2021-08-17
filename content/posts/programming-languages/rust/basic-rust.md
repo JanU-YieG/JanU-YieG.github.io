@@ -127,8 +127,22 @@ summary: "Rust Basic"
     - `Associated functions`:Don't take `self` as a parameter.Calling associated function use `::`.This function is namespaced by the struct.
     - Multiple `impl` Blocks
 
-## Enums and Pattern Matching
+## Enums
 - Enums can create custom types.
+- Each variant can have diferent types and amounts of associated data.
+- you can put any kind of data inside an enum variant.
+- we can also define methods on enums like struct.
+
+## Option enum
+- enum defined by the standard library.
+- a value could be something or it could be nothing.
+- included in the prelude:you don't need to bring it into scope explicitly,you can use `Some` and `None` derectly without the `::` prefix.
+- `Option<T>` enum is still just a regular enum,and `Some<T>` and `None` are still variants of type `Option<T>`
+- `<T>` is a generic type parameter.
+- useing `None` ,you need to tell Rust what type of `Option<T>` we have.
+
+## Match
+- 
 
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
