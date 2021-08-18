@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/basic-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  598 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  1061 ,
         "url": "https:\/\/janu-yieg.github.io\/basic-rust\/","datePublished": "2021-08-12T11:53:01+08:00","dateModified": "2021-08-12T11:53:01+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Rust</h1><h2 class="single-subtitle">The basic of rust-lang</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;598 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1061 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -143,6 +143,8 @@
     <li><a href="#enums">Enums</a></li>
     <li><a href="#option-enum">Option enum</a></li>
     <li><a href="#match">Match</a></li>
+    <li><a href="#the-_-placeholder">The _ placeholder</a></li>
+    <li><a href="#managing-growing-projects-with-packagescreatesand-modules--module-system">Managing Growing Projects with Packages,Creates,and Modules  (Module system)</a></li>
     <li><a href="#appendix">Appendix</a></li>
   </ul>
 </nav></div>
@@ -329,12 +331,41 @@ let spaces = spaces.len();
 </ul>
 <h2 id="match">Match</h2>
 <ul>
-<li></li>
+<li>allowed you to compare a value against a series of paterns and then execute code based on which pattern matches.</li>
+<li>Patterns:literal values,variable names,wildcards,many other things.</li>
+<li><code>if</code> the expression needs to return a Boolean value,but the <code>Match</code> can be any type.</li>
+<li>each arm is an expression,and the resulting value of the expression in the matching arm is the value that gets returned for the entire <code>match</code> expression.</li>
+<li>If you want to run multiple lines of code in a match arm ,you can use curly brackets.</li>
+<li>Another useful feature of match arms is that they can bind to the parts of the values that match the pattern.</li>
+<li>Matches are exhaustive.(we must exhaust every last possibility in order for the code to be valid).</li>
+<li><code>if let</code>:If we care about only one of the cases and ignore the rest,we can use <code>if let</code> to avoid the match is wordy.You can use <code>else</code> after <code>if let</code>.</li>
+</ul>
+<h2 id="the-_-placeholder">The _ placeholder</h2>
+<p>1.match:the pattern <code>_</code> will match any value.</p>
+<h2 id="managing-growing-projects-with-packagescreatesand-modules--module-system">Managing Growing Projects with Packages,Creates,and Modules  (Module system)</h2>
+<ul>
+<li>Cargo provides Workspaces for very large projects of a set of interrelated packages that evolve together and contain multiple binary crates and optionally one library crate.</li>
+<li>You can not have two items with the same name in the same scope;tools are available to resolve name conflicts.</li>
+<li>Packages: A Cargo feature that lets you build, test, and share crates</li>
+<li>Crates: A tree of modules that produces a library or executable</li>
+<li>Modules and use: Let you control the organization, scope, and privacy of paths</li>
+<li>Paths: A way of naming an item, such as a struct, function, or module</li>
+<li>keywords:<code>pub</code>,<code>as</code>,<code>use</code>,<code>mod</code>,<code>crate</code>,<code>self</code>,<code>super</code>,<code>*</code></li>
+<li>Mudules are not useful onlu for organizing your code.They alse define Rust&rsquo;s <code>privacy boundary</code>.</li>
+<li>Items in a parent module can’t use the private items inside child modules, but items in child modules can use the items in their ancestor modules.</li>
+<li>Rust chose to have the module system function this way so that hiding inner implementation details is the default.</li>
+<li><code>pub</code> to struct and enum:we use pub before a struct definition, we make the struct public, but the struct’s fields will still be private. We can make each field public or not on a case-by-case basis.In contrast, if we make an enum public, all of its variants are then public.</li>
+<li><code>pub use</code>:Re-exporting</li>
+<li><code>std</code> is also a crate that&rsquo;s external to our package,but we do not need to change <code>Cargo.toml</code> to include <code>std</code>,because the standard library is shipped with the Rust language.However,we do need to refer to refer to it with <code>use</code> to bring items from there into our package&rsquo;s scope.</li>
+<li>nested path: <code>use std::{cmp::Ordering,io}</code> <code>use std::io::{self,Write}</code></li>
+<li><code>*</code> the Glob operator:<code>use std::collections::*</code></li>
+<li>The mod keyword declares modules, and Rust looks in a file with the same name as the module for the code that goes into that module.</li>
 </ul>
 <h2 id="appendix">Appendix</h2>
 <ul>
 <li><a href="https://doc.rust-lang.org/book/appendix-02-operators.html" target="_blank" rel="noopener noreffer">Operators</a></li>
 <li><a href="https://doc.rust-lang.org/book/appendix-03-derivable-traits.html" target="_blank" rel="noopener noreffer">Trait for custom types</a></li>
+<li>[crates.io]*(<a href="https://crates.io/" target="_blank" rel="noopener noreffer">https://crates.io/</a>)</li>
 </ul></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
