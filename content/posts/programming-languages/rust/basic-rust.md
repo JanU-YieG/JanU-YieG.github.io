@@ -171,6 +171,8 @@ summary: "Rust Basic"
 - nested path: `use std::{cmp::Ordering,io}` `use std::io::{self,Write}`
 - `*` the Glob operator:`use std::collections::*`
 - The mod keyword declares modules, and Rust looks in a file with the same name as the module for the code that goes into that module.
+- Module code is private by default, but you can make definitions public by
+adding the pub keyword.
 
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
