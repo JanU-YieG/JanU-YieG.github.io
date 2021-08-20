@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/basic-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  1078 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  1401 ,
         "url": "https:\/\/janu-yieg.github.io\/basic-rust\/","datePublished": "2021-08-12T11:53:01+08:00","dateModified": "2021-08-12T11:53:01+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Rust</h1><h2 class="single-subtitle">The basic of rust-lang</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1078 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1401 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -145,6 +145,10 @@
     <li><a href="#match">Match</a></li>
     <li><a href="#the-_-placeholder">The _ placeholder</a></li>
     <li><a href="#managing-growing-projects-with-packagescreatesand-modules--module-system">Managing Growing Projects with Packages,Creates,and Modules  (Module system)</a></li>
+    <li><a href="#common-collections">Common Collections</a></li>
+    <li><a href="#vect">Vec<T></a></li>
+    <li><a href="#string">String</a></li>
+    <li><a href="#hash-map">Hash Map</a></li>
     <li><a href="#appendix">Appendix</a></li>
   </ul>
 </nav></div>
@@ -362,6 +366,37 @@ let spaces = spaces.len();
 <li>The mod keyword declares modules, and Rust looks in a file with the same name as the module for the code that goes into that module.</li>
 <li>Module code is private by default, but you can make definitions public by
 adding the pub keyword.</li>
+</ul>
+<h2 id="common-collections">Common Collections</h2>
+<ul>
+<li>Rust&rsquo;s standard library includes a number of very useful data structures called <code>collections</code>.</li>
+<li>The data these collections point to is stored on the heap.</li>
+<li>A vector allows you to store a variable number of values next to each other.</li>
+<li>A string is a collection of characters. We’ve mentioned the String type previously, but in this chapter we’ll talk about it in depth.</li>
+<li>A hash map allows you to associate a value with a particular key. It’s a particular implementation of the more general data structure called a map.</li>
+</ul>
+<h2 id="vect">Vec<T></h2>
+<ul>
+<li>Vectors allow you to store more than one value in a single data structure that puts all the values next to each other in memory.</li>
+<li>Vectors can only store values of the same type.</li>
+<li>When we need to store elements of a different type in a vector ,we can define and use an enum!</li>
+</ul>
+<h2 id="string">String</h2>
+<ul>
+<li>Strings are implemented as a collection of bytes.</li>
+<li>every collection type has operetions:creating,updating,reading.</li>
+<li>Rust has only one string type in the core language,which is the string slice <code>str</code> that is usually seen in its borrowed for <code>&amp;str</code>.</li>
+<li>The <code>String</code> type, which is provide by Rust&rsquo;s standard library rather than coded into the code language,is a growable,mutable,owned,UTF-8 encoded string type.</li>
+<li>strings are UTF-8 encoded.&mdash;-&gt;can not use index get char in a string.</li>
+<li><code>+</code>:fn add(self,s:&amp;str)-&gt;String{}</li>
+<li>format!:It does not take ownership of any of its parameters.</li>
+<li>you can use <code>string slice</code> to index a range getting a <code>string slice</code>.&mdash;-&gt;bytes.&ndash;not the best way.</li>
+<li>grapheme clusters:you can use <code>chars</code> methond,if you need to perform operations on individual Unicode scalar values.  <code>bytes</code> method:returns each raw byte, which might be appropriate for your domain.  But be sure to remember that valid Unicode scalar values may be made up of more than 1 byte.</li>
+</ul>
+<h2 id="hash-map">Hash Map</h2>
+<ul>
+<li>all of the keys must have the same type, and all of the values must have the same type.</li>
+<li>A hasher is a type that implements the <code>BuildHasher</code> trait.</li>
 </ul>
 <h2 id="appendix">Appendix</h2>
 <ul>
