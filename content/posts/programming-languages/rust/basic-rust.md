@@ -174,6 +174,31 @@ summary: "Rust Basic"
 - Module code is private by default, but you can make definitions public by
 adding the pub keyword.
 
+## Common Collections
+- Rust's standard library includes a number of very useful data structures called `collections`.
+- The data these collections point to is stored on the heap.
+- A vector allows you to store a variable number of values next to each other.
+- A string is a collection of characters. We’ve mentioned the String type previously, but in this chapter we’ll talk about it in depth.
+- A hash map allows you to associate a value with a particular key. It’s a particular implementation of the more general data structure called a map.
+
+## Vec<T>
+-  Vectors allow you to store more than one value in a single data structure that puts all the values next to each other in memory.
+- Vectors can only store values of the same type.
+- When we need to store elements of a different type in a vector ,we can define and use an enum!
+## String
+- Strings are implemented as a collection of bytes.
+- every collection type has operetions:creating,updating,reading.
+- Rust has only one string type in the core language,which is the string slice `str` that is usually seen in its borrowed for `&str`.
+- The `String` type, which is provide by Rust's standard library rather than coded into the code language,is a growable,mutable,owned,UTF-8 encoded string type.
+- strings are UTF-8 encoded.---->can not use index get char in a string.
+- `+`:fn add(self,s:&str)->String{}
+- format!:It does not take ownership of any of its parameters.
+- you can use `string slice` to index a range getting a `string slice`.---->bytes.--not the best way.
+- grapheme clusters:you can use `chars` methond,if you need to perform operations on individual Unicode scalar values.  `bytes` method:returns each raw byte, which might be appropriate for your domain.  But be sure to remember that valid Unicode scalar values may be made up of more than 1 byte.
+## Hash Map
+- all of the keys must have the same type, and all of the values must have the same type.
+- A hasher is a type that implements the `BuildHasher` trait.
+
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 - [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
