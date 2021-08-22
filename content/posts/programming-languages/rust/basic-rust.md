@@ -198,7 +198,15 @@ adding the pub keyword.
 ## Hash Map
 - all of the keys must have the same type, and all of the values must have the same type.
 - A hasher is a type that implements the `BuildHasher` trait.
-
+## Error Handling
+- Rust requires you to acknowledge the possibility of an error and take some action before your code will compile.
+- Rust groups errors into two major categories:`recoverable`(`Result<T,E>`) and `unrecoverable`(`panic!`) errors.
+- `RUST_BACKTRACK`:environment variable to get backtrace of exactly what happened to cause the error.
+- `unwrap` and `expect` methods on `Result<T,E>` type.
+- `Propagating Errors`
+- `?`:go through the `from` function,defined in the `From` trait.
+- When you choose to return a Result value, you give the calling code options rather than making the decision for it.
+- It’s advisable to have your code panic when it’s possible that your code could end up in a bad state. 
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 - [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
