@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/basic-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  1504 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  2068 ,
         "url": "https:\/\/janu-yieg.github.io\/basic-rust\/","datePublished": "2021-08-12T11:53:01+08:00","dateModified": "2021-08-12T11:53:01+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Rust</h1><h2 class="single-subtitle">The basic of rust-lang</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1504 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2068 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -134,6 +134,7 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#important">Important</a></li>
     <li><a href="#variables--constant">Variables &amp;&amp; Constant</a></li>
     <li><a href="#original-data-types">Original Data Types</a></li>
     <li><a href="#functions">Functions</a></li>
@@ -150,10 +151,17 @@
     <li><a href="#string">String</a></li>
     <li><a href="#hash-map">Hash Map</a></li>
     <li><a href="#error-handling">Error Handling</a></li>
+    <li><a href="#generic-types">Generic Types</a></li>
+    <li><a href="#traits">Traits</a></li>
+    <li><a href="#lifetimes">Lifetimes</a></li>
     <li><a href="#appendix">Appendix</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="variables--constant">Variables &amp;&amp; Constant</h2>
+            </div><div class="content" id="content"><h2 id="important">Important</h2>
+<ul>
+<li>道生一，一生二，二生三，三生万物。</li>
+</ul>
+<h2 id="variables--constant">Variables &amp;&amp; Constant</h2>
 <ul>
 <li>Immutable (default)
 <div class="highlight"><div class="chroma">
@@ -409,6 +417,61 @@ adding the pub keyword.</li>
 <li><code>?</code>:go through the <code>from</code> function,defined in the <code>From</code> trait.</li>
 <li>When you choose to return a Result value, you give the calling code options rather than making the decision for it.</li>
 <li>It’s advisable to have your code panic when it’s possible that your code could end up in a bad state.</li>
+</ul>
+<h2 id="generic-types">Generic Types</h2>
+<ul>
+<li>Avoid duplication by using generic types instead.</li>
+<li>Generics are abstract stand-ins for concrete types or other properties.</li>
+<li><code>&lt;T&gt;</code>:you can use any identifier as a type parameter name.<code>&lt;T,U&gt;</code>.<code>&lt;K,V,A&gt;</code>&hellip;</li>
+<li><code>Option&lt;T&gt;{Some(T),None}</code>,<code>Result&lt;T,E&gt;{Ok(T),Err(E)}</code></li>
+<li>You can use as many generic type parameters in a definition as you want,but at this time ,it indicate that your code needs restructuring into smaller pieces.</li>
+<li>Rust accomplishes this by performing monomorphization of the code that is using generics at compile time.<code>Monomorphization</code> is the process of turning generic code into specific code by filling in the concrete types that are used when compiled.</li>
+<li><code>Function definitions</code>,<code>Struct definitions</code>,<code>Enum definitions</code>,<code>Method definitions</code>.</li>
+</ul>
+<h2 id="traits">Traits</h2>
+<ul>
+<li>Defining shared behavior in an abstract way.We can use trait bounds to specify that a generic can be any type that has certain behavior.</li>
+<li>A <code>trait</code> tells the Rust compiler about functionality a particular type has and share with other types.</li>
+<li>Grouping method signatures together.</li>
+<li><code>impl trait_name for type{}</code></li>
+<li><code>coherence</code>:One restriction to note with trait implementations is that we can implement a trait on a type only if either the trait or the type is local to our crate.</li>
+<li><code>orphan rule</code></li>
+<li>It can have default implementations.&mdash;-&gt;override&mdash;&gt;Default implementations can call other methods in the same trait,even if those other methods don&rsquo;t have a default implementation.</li>
+<li><code>impl Trait</code> syntax===&gt;&amp;impl Trait_name&hellip;&ndash;multiple-&gt;<code>+</code>:<code>(item:&amp;(imple trait_name1+trait_name2))</code></li>
+<li><code>trait bound</code>:<code>pub fn notify&lt;T:Summary&gt;(item1:&amp;T,item2:&amp;T){}</code>&ndash;multiple-&gt;<code>+</code>:<code>pub fn notify&lt;T:Summary+Display&gt;(item:&amp;T){}</code></li>
+<li><code>where</code> clauses:clearer trait bounds:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">fn some_fn&lt;T,U&gt;(t:&amp;T,u:&amp;T)-&gt;i32
+    where T:Display+Clone,
+          U:Clone+Debug
+{}
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Returning Types that implement traits:a value of some type that implements a trait.</li>
+</ul>
+<h2 id="lifetimes">Lifetimes</h2>
+<ul>
+<li>A variety of generics that give the compiler information about how references relate to each other.Lifetimes allow us to borrow values in many situation while still enabling the compiler to check that the references ar valid.</li>
+<li>Every reference in Rust has a <code>lifetime</code>,which is the scope for which that reference is valid.</li>
+<li>Avoid dangling references.</li>
+<li><code>borrow checker</code> that compares scopes to determine whether all borrows are valid.</li>
+<li>Just as functions can accept any type when the signature specifies a generic type parameter, functions can accept references with any lifetime by specifying a generic lifetime parameter.when we specify the lifetime parameters in this function signature, we’re not changing the lifetimes of any values passed in or returned. Rather, we’re specifying that the borrow checker should reject any values that don’t adhere to these constraints.When annotating lifetimes in functions, the annotations go in the function signature, not in the function body.</li>
+<li>lifetime elision three ruls:
+<ul>
+<li>The first rule is that each parameter that is a reference gets its own lifetime parameter.</li>
+<li>The second rule is if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters</li>
+<li>The third rule is if there are multiple input lifetime parameters, but one of them is &amp;self or &amp;mut self because this is a method, the lifetime of self is assigned to all output lifetime parameters.</li>
+</ul>
+</li>
+<li>One special lifetime we need to discuss is &lsquo;static, which means that this reference can live for the entire duration of the program.</li>
 </ul>
 <h2 id="appendix">Appendix</h2>
 <ul>
