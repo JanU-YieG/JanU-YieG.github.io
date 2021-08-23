@@ -28,6 +28,9 @@ license: ""
 summary: "Rust Basic"
 ---
 
+## Important
+- 道生一，一生二，二生三，三生万物。
+
 <!--more-->
 ## Variables && Constant
 - Immutable (default)
@@ -207,6 +210,44 @@ adding the pub keyword.
 - `?`:go through the `from` function,defined in the `From` trait.
 - When you choose to return a Result value, you give the calling code options rather than making the decision for it.
 - It’s advisable to have your code panic when it’s possible that your code could end up in a bad state. 
+## Generic Types
+- Avoid duplication by using generic types instead.
+- Generics are abstract stand-ins for concrete types or other properties.
+- `<T>`:you can use any identifier as a type parameter name.`<T,U>`.`<K,V,A>`...
+- `Option<T>{Some(T),None}`,`Result<T,E>{Ok(T),Err(E)}`
+- You can use as many generic type parameters in a definition as you want,but at this time ,it indicate that your code needs restructuring into smaller pieces.
+- Rust accomplishes this by performing monomorphization of the code that is using generics at compile time.`Monomorphization` is the process of turning generic code into specific code by filling in the concrete types that are used when compiled.
+- `Function definitions`,`Struct definitions`,`Enum definitions`,`Method definitions`.
+## Traits
+- Defining shared behavior in an abstract way.We can use trait bounds to specify that a generic can be any type that has certain behavior.
+- A `trait` tells the Rust compiler about functionality a particular type has and share with other types.
+- Grouping method signatures together.
+- `impl trait_name for type{}`
+- `coherence`:One restriction to note with trait implementations is that we can implement a trait on a type only if either the trait or the type is local to our crate.
+- `orphan rule`
+- It can have default implementations.---->override--->Default implementations can call other methods in the same trait,even if those other methods don't have a default implementation.
+- `impl Trait` syntax===>&impl Trait_name...--multiple->`+`:`(item:&(imple trait_name1+trait_name2))`
+- `trait bound`:`pub fn notify<T:Summary>(item1:&T,item2:&T){}`--multiple->`+`:`pub fn notify<T:Summary+Display>(item:&T){}`
+- `where` clauses:clearer trait bounds:
+    ```
+    fn some_fn<T,U>(t:&T,u:&T)->i32
+        where T:Display+Clone,
+              U:Clone+Debug
+    {}
+    ```
+- Returning Types that implement traits:a value of some type that implements a trait.
+
+## Lifetimes
+- A variety of generics that give the compiler information about how references relate to each other.Lifetimes allow us to borrow values in many situation while still enabling the compiler to check that the references ar valid.
+- Every reference in Rust has a `lifetime`,which is the scope for which that reference is valid.
+- Avoid dangling references.
+- `borrow checker` that compares scopes to determine whether all borrows are valid.
+-  Just as functions can accept any type when the signature specifies a generic type parameter, functions can accept references with any lifetime by specifying a generic lifetime parameter.when we specify the lifetime parameters in this function signature, we’re not changing the lifetimes of any values passed in or returned. Rather, we’re specifying that the borrow checker should reject any values that don’t adhere to these constraints.When annotating lifetimes in functions, the annotations go in the function signature, not in the function body. 
+- lifetime elision three ruls:
+    - The first rule is that each parameter that is a reference gets its own lifetime parameter.
+    - The second rule is if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters
+    - The third rule is if there are multiple input lifetime parameters, but one of them is &self or &mut self because this is a method, the lifetime of self is assigned to all output lifetime parameters. 
+- One special lifetime we need to discuss is 'static, which means that this reference can live for the entire duration of the program. 
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 - [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
