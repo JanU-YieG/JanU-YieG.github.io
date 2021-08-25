@@ -221,6 +221,12 @@ adding the pub keyword.
     - The second rule is if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters
     - The third rule is if there are multiple input lifetime parameters, but one of them is &self or &mut self because this is a method, the lifetime of self is assigned to all output lifetime parameters. 
 - One special lifetime we need to discuss is 'static, which means that this reference can live for the entire duration of the program. 
+
+## Automated Tests
+- typically perform three actions:
+    - Set up any needed data or state.
+    - Run the code you want to test.
+    - Assert the result are what you expect.
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 - [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
