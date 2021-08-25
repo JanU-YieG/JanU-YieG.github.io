@@ -254,6 +254,9 @@ adding the pub keyword.
     - Set up any needed data or state.
     - Run the code you want to test.
     - Assert the result are what you expect.
+- `assert!` macro provided by the standard library,is useful when you want to ensure that some condition in atest evaluates to `true`.
+- `assert_eq!` and `assert_ne!`
+- `#[test]``#[should_panic]``#[cfg(test)]`
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 - [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
