@@ -238,6 +238,9 @@ adding the pub keyword.
     - Attribute-like macros that define custom attributes usable on any item
     - Function-like macros that look like function calls but operate on the tokens specified as their argument
 - Fundamentally,macros are a way of writing code that writes other code,which is known as `metaprogramming`.
+
+## Derivable Traits
+- `derive` attribute generates code that will implement a trait with its own default implementation on the type you've annotated with the `derive` syntax.
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 - [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
