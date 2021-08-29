@@ -2,7 +2,7 @@
 title: "幸福和观念"
 date: 2021-06-05T14:57:16+08:00
 lastmod: 2021-06-05T14:57:16+08:00
-draft: false
+draft: true
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description:

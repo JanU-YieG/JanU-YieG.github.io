@@ -3,7 +3,7 @@ title: "The Declaration of Independence"
 subtitle: ""
 date: 2021-08-16T22:10:21+08:00
 lastmod: 2021-08-16T22:10:21+08:00
-draft: false
+draft: true
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description:
