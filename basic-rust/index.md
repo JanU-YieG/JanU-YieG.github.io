@@ -238,9 +238,14 @@ adding the pub keyword.
     - Attribute-like macros that define custom attributes usable on any item
     - Function-like macros that look like function calls but operate on the tokens specified as their argument
 - Fundamentally,macros are a way of writing code that writes other code,which is known as `metaprogramming`.
+- take a variable number of parameters.Macros are expanded before the compiler interprets the meaning of the code ,for example, implement a trait on a given type.You must define macros or bring them into scope before you call them in a file.
+- `Declarative macro`
+    - Macros also compare a value to patterns that are associated with particular code: in this situation, the value is the literal Rust source code passed to the macro; the patterns are compared with the structure of that source code; and the code associated with each pattern, when matched, replaces the code passed to the macro. This all happens during compilation.
+    - To define a macro , you use the `macro_rules!` construct.
 
 ## Derivable Traits
 - `derive` attribute generates code that will implement a trait with its own default implementation on the type you've annotated with the `derive` syntax.
+
 ## Appendix
 - [Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 - [Trait for custom types](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)

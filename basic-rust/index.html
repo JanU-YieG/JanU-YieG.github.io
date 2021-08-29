@@ -18,7 +18,7 @@
 <meta name="twitter:title" content="Basic Rust"/>
 <meta name="twitter:description" content="rust basic semantics"/>
 <meta name="application-name" content="Borer&#39;s blog">
-<meta name="apple-mobile-web-app-title" content="Borer&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/borer.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://janu-yieg.github.io/basic-rust/" /><link rel="prev" href="https://janu-yieg.github.io/study_manner/" /><link rel="next" href="https://janu-yieg.github.io/dulixuanyan/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Borer&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/borer.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://janu-yieg.github.io/basic-rust/" /><link rel="prev" href="https://janu-yieg.github.io/study_manner/" /><link rel="next" href="https://janu-yieg.github.io/gongchandangxuanyan/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/basic-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  2228 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Basic","wordcount":  2341 ,
         "url": "https:\/\/janu-yieg.github.io\/basic-rust\/","datePublished": "2021-08-12T11:53:01+08:00","dateModified": "2021-08-12T11:53:01+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,7 +118,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Rust</h1><h2 class="single-subtitle">The basic of rust-lang</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2228 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-12">2021-08-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2341 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -500,6 +500,13 @@ adding the pub keyword.</li>
 </ul>
 </li>
 <li>Fundamentally,macros are a way of writing code that writes other code,which is known as <code>metaprogramming</code>.</li>
+<li>take a variable number of parameters.Macros are expanded before the compiler interprets the meaning of the code ,for example, implement a trait on a given type.You must define macros or bring them into scope before you call them in a file.</li>
+<li><code>Declarative macro</code>
+<ul>
+<li>Macros also compare a value to patterns that are associated with particular code: in this situation, the value is the literal Rust source code passed to the macro; the patterns are compared with the structure of that source code; and the code associated with each pattern, when matched, replaces the code passed to the macro. This all happens during compilation.</li>
+<li>To define a macro , you use the <code>macro_rules!</code> construct.</li>
+</ul>
+</li>
 </ul>
 <h2 id="derivable-traits">Derivable Traits</h2>
 <ul>
@@ -534,7 +541,7 @@ adding the pub keyword.</li>
     </div>
 
     <div class="post-nav"><a href="/study_manner/" class="prev" rel="prev" title="如何阅读一本书"><i class="fas fa-angle-left fa-fw"></i>如何阅读一本书</a>
-            <a href="/dulixuanyan/" class="next" rel="next" title="The Declaration of Independence">The Declaration of Independence<i class="fas fa-angle-right fa-fw"></i></a></div>
+            <a href="/gongchandangxuanyan/" class="next" rel="next" title="共产党宣言">共产党宣言<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="gitalk" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
