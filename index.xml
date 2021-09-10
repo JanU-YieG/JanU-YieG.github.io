@@ -4,9 +4,18 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Wed, 18 Aug 2021 13:51:03 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Fri, 10 Sep 2021 11:40:39 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>大话西游之仙履奇缘</title>
+    <link>https://janu-yieg.github.io/dahuaxiyouzhixianlvqiyuan/</link>
+    <pubDate>Fri, 10 Sep 2021 11:40:39 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/dahuaxiyouzhixianlvqiyuan/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://s3.jpg.cm/2021/09/10/IS9BeS.jpg" referrerpolicy="no-referrer">
+            </div>不爱而得，失去而爱，又遇而爱前，爱而不可得。]]></description>
+</item><item>
     <title>用才有用</title>
     <link>https://janu-yieg.github.io/useisuseful/</link>
     <pubDate>Wed, 18 Aug 2021 13:51:03 &#43;0800</pubDate>
@@ -90,14 +99,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://cdn5.maocdn.cn/img/2021/06/17/wp3082278-github-wallpapers.jpg" referrerpolicy="no-referrer">
             </div>git 常用功能使用]]></description>
-</item><item>
-    <title>Archlinux 驱动</title>
-    <link>https://janu-yieg.github.io/arch_drivers/</link>
-    <pubDate>Thu, 17 Jun 2021 17:36:43 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/arch_drivers/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://img.maocdn.cn/img/2021/06/07/728908.jpg" referrerpolicy="no-referrer">
-            </div>]]></description>
 </item></channel>
 </rss>
