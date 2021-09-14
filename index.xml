@@ -4,9 +4,18 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Fri, 10 Sep 2021 11:40:39 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Tue, 14 Sep 2021 10:39:07 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>心之力</title>
+    <link>https://janu-yieg.github.io/xinzhili/</link>
+    <pubDate>Tue, 14 Sep 2021 10:39:07 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/xinzhili/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://s3.jpg.cm/2021/09/14/Irc2EC.jpg" referrerpolicy="no-referrer">
+            </div>宇宙即我心，我心即宇宙。细微至发梢，宏大至天地。世界、宇宙乃至万物皆为思维心力所驱使。博古观今，尤知人类之所以为世间万物之灵长，实为天地间心]]></description>
+</item><item>
     <title>大话西游之仙履奇缘</title>
     <link>https://janu-yieg.github.io/dahuaxiyouzhixianlvqiyuan/</link>
     <pubDate>Fri, 10 Sep 2021 11:40:39 &#43;0800</pubDate>
@@ -90,14 +99,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://s3.jpg.cm/2021/08/05/IAPdmX.jpg" referrerpolicy="no-referrer">
             </div>markdown常用语法]]></description>
-</item><item>
-    <title>Git常用功能(github)</title>
-    <link>https://janu-yieg.github.io/git/</link>
-    <pubDate>Thu, 17 Jun 2021 18:45:18 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/git/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://cdn5.maocdn.cn/img/2021/06/17/wp3082278-github-wallpapers.jpg" referrerpolicy="no-referrer">
-            </div>git 常用功能使用]]></description>
 </item></channel>
 </rss>
