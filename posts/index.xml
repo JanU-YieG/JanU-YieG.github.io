@@ -4,7 +4,14 @@
         <link>https://janu-yieg.github.io/posts/</link>
         <description>All Posts | Borer&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Tue, 14 Sep 2021 10:39:07 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Wed, 22 Sep 2021 10:38:08 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>知与博</title>
+    <link>https://janu-yieg.github.io/boyuzhi/</link>
+    <pubDate>Wed, 22 Sep 2021 10:38:08 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/boyuzhi/</guid>
+    <description><![CDATA[信言不美，美言不信。知而不博，博而不知。善者不多，多者不善。圣人无积，既以为人，己愈有；既以予人矣，己愈多。故天之道，利而不害；人之道，为而]]></description>
+</item><item>
     <title>心之力</title>
     <link>https://janu-yieg.github.io/xinzhili/</link>
     <pubDate>Tue, 14 Sep 2021 10:39:07 &#43;0800</pubDate>
@@ -88,14 +95,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://cdn5.maocdn.cn/img/2021/08/05/docker-facebook.png" referrerpolicy="no-referrer">
             </div>Docker常用命令解释及其注意事项]]></description>
-</item><item>
-    <title>Markdown常用语法</title>
-    <link>https://janu-yieg.github.io/markdown/</link>
-    <pubDate>Wed, 14 Jul 2021 11:12:06 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/markdown/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://s3.jpg.cm/2021/08/05/IAPdmX.jpg" referrerpolicy="no-referrer">
-            </div>markdown常用语法]]></description>
 </item></channel>
 </rss>
