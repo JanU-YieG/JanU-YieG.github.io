@@ -15,9 +15,9 @@ weight: 1
 resources:
 - name: ""
   src: "xx.jpg"
-keywords: ["thoughts", "大话西游"]
+keywords: ["Thoughts", "大话西游"]
 tags: ["大话西游"]
-categories: ["thoughts"]
+categories: ["Thoughts"]
 lightgallery: true
 toc:
   enable: true
