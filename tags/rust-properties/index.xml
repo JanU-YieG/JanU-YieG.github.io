@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Rust - Category - Borer&#39;s Blog</title>
-        <link>https://janu-yieg.github.io/categories/rust/</link>
-        <description>Rust - Category - Borer&#39;s Blog</description>
+        <title>Rust Properties - Tag - Borer&#39;s Blog</title>
+        <link>https://janu-yieg.github.io/tags/rust-properties/</link>
+        <description>Rust Properties - Tag - Borer&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Fri, 24 Sep 2021 14:49:43 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/categories/rust/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Fri, 24 Sep 2021 14:49:43 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/tags/rust-properties/" rel="self" type="application/rss+xml" /><item>
     <title>Important Properties in Rust</title>
     <link>https://janu-yieg.github.io/important-properties-in-rust/</link>
     <pubDate>Fri, 24 Sep 2021 14:49:43 &#43;0800</pubDate>
