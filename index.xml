@@ -14,7 +14,7 @@
     <guid>https://janu-yieg.github.io/important-properties-in-rust/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="https://s3.jpg.cm/2021/08/12/IXvMjt.jpg" referrerpolicy="no-referrer">
-            </div>1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) 元组返]]></description>
+            </div>1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) &amp; reference &amp;]]></description>
 </item><item>
     <title>心之力</title>
     <link>https://janu-yieg.github.io/xinzhili/</link>

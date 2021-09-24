@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Important Properties in Rust - Borer&#39;s Blog</title><meta name="Description" content="个人分享记录"><meta property="og:title" content="Important Properties in Rust" />
-<meta property="og:description" content="1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) 元组返" />
+<meta property="og:description" content="1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) &amp; reference &amp;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://janu-yieg.github.io/important-properties-in-rust/" /><meta property="og:image" content="https://janu-yieg.github.io/borer.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-24T14:49:43+08:00" />
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://janu-yieg.github.io/borer.png"/>
 
 <meta name="twitter:title" content="Important Properties in Rust"/>
-<meta name="twitter:description" content="1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) 元组返"/>
+<meta name="twitter:description" content="1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) &amp; reference &amp;"/>
 <meta name="application-name" content="Borer&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Borer&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/borer.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://janu-yieg.github.io/important-properties-in-rust/" /><link rel="prev" href="https://janu-yieg.github.io/xinzhili/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  612 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  1816 ,
         "url": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/","datePublished": "2021-09-24T14:49:43+08:00","dateModified": "2021-09-24T14:49:43+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Important Properties in Rust</h1><h2 class="single-subtitle">Rust重要特性</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;612 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1816 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -148,7 +148,7 @@
 <li>When the owner goes out of scope, the value will be dropped.</li>
 </ul>
 </li>
-<li>move &amp; clone &amp; copy(Copy trait)</li>
+<li>move &amp; clone &amp; copy(Copy trait) &amp; reference &amp; slice</li>
 <li>元组返回多个值,无值返回默认返回单元类型(<code>()</code>)</li>
 <li>规避数据竞争：不可变引用<code>&amp;</code> 和 可变引用<code>&amp;mut</code>(在特定作用域中的特定数据只能有一个可变引用，且此时不能拥有不可变引用).在最后一行代码不使用的地方释放作用域。</li>
 <li>We call having references as function parameters borrowing</li>
@@ -186,6 +186,62 @@
 <li>exhaustive</li>
 <li><code>_</code>匹配所有的值</li>
 <li><code>if let</code>(..<code>else</code>)只匹配一个模式的值而忽略其他模式的情况,使用<code>=</code>分割一个模式和一个表达式。</li>
+</ul>
+<p>11.The mudules system</p>
+<ul>
+<li>packages &amp; crates
+<ul>
+<li>一个包(package)中至多只能包含一个库crate（library crate）；包中可以包含任意多个二进制crate（binary crate）；包中至少包含一个crate,无论是库的还是二进制的。</li>
+<li><code>cargo new binary-crate-package</code>===&gt;<code>src/main.rs</code>&ndash;&gt;crate root &amp; <code>cargo new --lib library-crate-package</code>===&gt;<code>src/lib.rs</code>&ndash;&gt;crate root.</li>
+</ul>
+</li>
+<li>modules
+<ul>
+<li>将一个crate中的代码进行分组。</li>
+<li>控制项的<code>私有性</code>即可以被外部代码使用（public），还是内部实现的不能被外部代码使用（private）。</li>
+<li>Rust 中默认所有项（函数、方法、结构体、枚举、模块和常量）都是私有的。父模块中的项不能使用子模块中的私有项，但是子模块中的项可以使用他们父模块中的项。</li>
+<li><code>pub</code>:使子模块的内部部分暴露给上级模块。</li>
+<li><code>siblings</code>,<code>child</code>,<code>parent</code>;Notice that the entire module tree is rooted under the implicit module named <code>crate</code>.</li>
+<li>如果我们在一个结构体定义的前面使用了 pub ，这个结构体会变成公有的，但是这个结构体的字段仍然是私有的。字段共有需要字段前加<code>pub</code>.</li>
+<li>如果我们将枚举设为公有，则它的所有成员都将变为公有。</li>
+<li><code>use</code> Bringing Paths into Scope&mdash;bring a name into scope.&mdash;the name available in the new scope is private.&mdash;-&gt;<code>pub use</code>re-exporting&mdash;This technique is called re-exporting because we’re bringing an item into scope but also making that item available for others to bring into their scope.;;;<code>as</code>Providing New Names.</li>
+<li><code>use std::io::{self,Write};</code>.glob运算符：<code>use std::collections::*;</code></li>
+<li><code>mod</code> 关键字声明了模块，Rust 会在与模块同名的文件中查找模块的代码。</li>
+<li><code>pub</code>,<code>mod</code>,<code>super</code>,<code>use</code>,<code>pub use</code>,<code>as</code></li>
+</ul>
+</li>
+<li>paths
+<ul>
+<li>absolute path:<code>crate::..::..</code>;relative path:<code>self/super::..::..</code></li>
+<li><code>&quot;src/front_of_house.rs&quot; or &quot;src/front_of_house/mod.rs&quot;</code> &amp; <code>&quot;src/front_of_house/hosting.rs&quot; or &quot;src/front_of_house/hosting/mod.rs&quot;</code></li>
+</ul>
+</li>
+</ul>
+<p>12.Collections(数据结构)</p>
+<ul>
+<li>The data these collections point to is stored on the heap, which means the amount of data does not need to be known at compile time and can grow or shrink as the program runs.</li>
+<li>Vector(Vec<T>)
+<ul>
+<li>相邻排列所有值，存储相同类型的值.</li>
+<li><code>let v:Vec&lt;i32&gt;=Vec::new();</code> &amp; <code>let v=vec![1,2,3];</code> &amp; <code>v.push(3);</code> &amp; <code>let third:&amp;i32=&amp;v[2];</code> &amp; <code>let does_not_exist=v.get(100);</code> &amp; <code>for i in &amp;mut v{ *i+=59; }</code> &amp; <code>v.pop()</code> &amp; <code>enum + vector 实现vec中存放不同类型的数据（但其都是enum的一个类型）</code></li>
+<li>vector 的工作方式：在 vector 的结尾增加新元素时，在没有足够空间将所有所有元素依次相邻存放的情况下，可能会要求分配新内存并将老的元素拷贝到新的空间中。</li>
+</ul>
+</li>
+<li>String(UTF-8编码的)
+<ul>
+<li>字符串就是作为字节的集合外加一些方法实现的.它是可增长的、可变的、有所有权的、UTF-8 编码的字符串类型。Rust 的核心语言中只有一种字符串类型：str，字符串 slice，它通常以被借用的形式出现，<code>&amp;str</code>。</li>
+<li><code>String::from(&quot;hello&quot;)</code>&lt;==&gt;<code>&quot;hello&quot;.to_string()</code>==&gt;<code>String::new()</code> &amp; <code>s.push(s2)</code>==&gt;<code>s.push_str(s2)</code>==&gt;<code>s3=s+&amp;s2</code>-&gt;<code>fn add(self,s:&amp;str)-&gt;String{}</code>-&gt;<code>deref coercion</code>-&gt;<code>String--&gt;&amp;str</code>&ndash;&gt;<code>&amp;s2--&gt;&amp;s2[..]</code>==&gt;<code>let s=format!(&quot;{}-{}-{}&quot;,s1,s2,s3);</code>&ndash;&gt;不会获取所有权 &amp; <code>let s = &amp;hello[0..4]</code>&ndash;&gt;<code>小心使用</code> &amp; <code>for c in s.chars(){}</code>===&gt;<code>for b in s.bytes(){}</code></li>
+<li><code>String</code> 是一个 <code>Vec&lt;u8&gt;</code>的封装。</li>
+<li>有效的 Unicode 标量值可能会由不止一个字节组成。</li>
+</ul>
+</li>
+<li>Hash map
+<ul>
+<li>HashMap&lt;K,V&gt;:存储一个键类型K对应一个值类型V的映射。可以用任何类型作为键。哈希 map 是同质的：所有的键必须是相同类型，值也必须都是相同类型。</li>
+<li><code>let mut scores=HashMap::new()</code>==&gt;<code>let scores:HashMap&lt;_,_&gt;=tems.iter().zip(initial_scores.iter()).collect();</code>&ndash;&gt;teams和initial_scores是元组的vector &amp; <code>scores.insert(String::form(&quot;blue&quot;),10);</code> &amp; <code>scores.get(&quot;Bule&quot;)</code> &amp; <code>for (key,value) in &amp;scores {}</code> &amp; <code>scores.entry(String::from(&quot;Yellow&quot;)).or_insert(55);</code></li>
+<li>Hashing Functions</li>
+</ul>
+</li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
