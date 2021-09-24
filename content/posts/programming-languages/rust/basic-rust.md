@@ -3,7 +3,7 @@ title: "Basic Rust"
 subtitle: "The basic of rust-lang"
 date: 2021-08-12T11:53:01+08:00
 lastmod: 2021-08-12T11:53:01+08:00
-draft: false
+draft: true
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description: rust basic semantics
