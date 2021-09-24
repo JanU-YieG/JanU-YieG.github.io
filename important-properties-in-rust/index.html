@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  1816 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  2102 ,
         "url": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/","datePublished": "2021-09-24T14:49:43+08:00","dateModified": "2021-09-24T14:49:43+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Important Properties in Rust</h1><h2 class="single-subtitle">Rust重要特性</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1816 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2102 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -242,6 +242,45 @@
 <li>Hashing Functions</li>
 </ul>
 </li>
+</ul>
+<p>13.Error Handling</p>
+<ul>
+<li><code>recoverable errors</code>&ndash;&gt;<code>Result&lt;T,E&gt;</code>
+<ul>
+<li><code>panic!</code>:<code>unwinding</code>&ndash;&gt;Rust walks back up the stack and cleans up the data.===&gt;<code>abort</code>:ending the program without cleaning up.cleaned up by operating system.===&gt;<code>switch from unwinding to aborting</code>:adding <code>panic='abort'</code> to the appropriate [profile] sections in your Cargo.toml file.</li>
+<li><code>panic!</code>的<code>backtrace</code>：<code>backtrace</code>是一个执行到目前位置所有被调用的函数列表；RUST_BACKTRACE=1;必须其用debug标识才可以获取到<code>backtrace</code>，不使用<code>--release</code>参数运行<code>cargo build</code>或<code>cargo run</code>时，debug标识默认启用.</li>
+</ul>
+</li>
+<li><code>unrecoverable errors</code>&ndash;&gt;<code>panic!</code>
+<ul>
+<li><code>enum Result&lt;T,E&gt;{Ok(T),Err(E),}</code>&ndash;&gt;<code>unwrap</code>,<code>expect</code></li>
+<li>A Shortcut for Propagating Errors: the <code>?</code> Operator</li>
+</ul>
+</li>
+</ul>
+<p>14.Generic Types,Traits,Lifetimes</p>
+<ul>
+<li>
+<p>Generic Types</p>
+<ul>
+<li>泛型是具体类型或其他属性的抽象替代。</li>
+<li><code>fn largest&lt;T&gt;(list:&amp;[T])-&gt;T{}</code></li>
+<li><code>struct Point1&lt;T&gt;{x:T,y:T,}</code> <code>struct Point2&lt;T,U&gt;{x:T,y:U,}</code></li>
+<li><code>enum Option&lt;T&gt;{Some(T),None,}</code> <code>enum Result&lt;T,E&gt;{Ok(T),Err(E),}</code></li>
+<li><code>impl&lt;T&gt; Point1&lt;T&gt;{fn x(&amp;self)-&gt;&amp;T{&amp;self.x}}</code> <code>impl&lt;T,U&gt; Point&lt;T,U&gt;{fn mixup&lt;V,W&gt;(self,other:Point&lt;V,W&gt;)-&gt;Point(T,W){...}}</code></li>
+<li>monomorphization:单态化是一个通过填充编译时使用的具体类型，将通用代码转换为特定代码的过程。</li>
+</ul>
+</li>
+<li>
+<p>Trait</p>
+</li>
+<li>
+<p>Lifetimes</p>
+</li>
+</ul>
+<p>others:</p>
+<ul>
+<li><code>prelude</code></li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
