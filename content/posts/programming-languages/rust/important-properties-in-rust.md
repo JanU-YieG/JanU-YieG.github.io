@@ -114,4 +114,41 @@ summary: ""
     - `let mut scores=HashMap::new()`==>`let scores:HashMap<_,_>=tems.iter().zip(initial_scores.iter()).collect();`-->teams和initial_scores是元组的vector & `scores.insert(String::form("blue"),10);` & `scores.get("Bule")` & `for (key,value) in &scores {}` & `scores.entry(String::from("Yellow")).or_insert(55);`
     - Hashing Functions
 
+13.Error Handling
+- `recoverable errors`-->`Result<T,E>`
+    - `panic!`:`unwinding`-->Rust walks back up the stack and cleans up the data.===>`abort`:ending the program without cleaning up.cleaned up by operating system.===>`switch from unwinding to aborting`:adding `panic='abort'` to the appropriate [profile] sections in your Cargo.toml file.
+    - `panic!`的`backtrace`：`backtrace`是一个执行到目前位置所有被调用的函数列表；RUST_BACKTRACE=1;必须其用debug标识才可以获取到`backtrace`，不使用`--release`参数运行`cargo build`或`cargo run`时，debug标识默认启用.
+- `unrecoverable errors`-->`panic!`
+    - `enum Result<T,E>{Ok(T),Err(E),}`-->`unwrap`,`expect`
+    - A Shortcut for Propagating Errors: the `?` Operator
 
+14.Generic Types,Traits,Lifetimes
+- Generic Types
+    - 泛型是具体类型或其他属性的抽象替代。
+    - `fn largest<T>(list:&[T])->T{}`
+    - `struct Point1<T>{x:T,y:T,}` `struct Point2<T,U>{x:T,y:U,}`
+    - `enum Option<T>{Some(T),None,}` `enum Result<T,E>{Ok(T),Err(E),}`
+    - `impl<T> Point1<T>{fn x(&self)->&T{&self.x}}` `impl<T,U> Point<T,U>{fn mixup<V,W>(self,other:Point<V,W>)->Point(T,W){...}}`
+    - monomorphization:单态化是一个通过填充编译时使用的具体类型，将通用代码转换为特定代码的过程。
+
+
+- Trait
+
+
+- Lifetimes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+others:
+- `prelude`
