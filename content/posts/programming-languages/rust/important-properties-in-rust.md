@@ -128,14 +128,39 @@ summary: ""
     - `fn largest<T>(list:&[T])->T{}`
     - `struct Point1<T>{x:T,y:T,}` `struct Point2<T,U>{x:T,y:U,}`
     - `enum Option<T>{Some(T),None,}` `enum Result<T,E>{Ok(T),Err(E),}`
-    - `impl<T> Point1<T>{fn x(&self)->&T{&self.x}}` `impl<T,U> Point<T,U>{fn mixup<V,W>(self,other:Point<V,W>)->Point(T,W){...}}`
+    - `impl<T> Point1<T>{fn x(&self)->&T{&self.x}}` `impl<T,U> Point2<T,U>{fn mixup<V,W>(self,other:Point<V,W>)->Point(T,W){...}}`
     - monomorphization:单态化是一个通过填充编译时使用的具体类型，将通用代码转换为特定代码的过程。
 
-
 - Trait
+    - 告诉Rust编译器某个特定类型拥有可能与其他类型共享的功能。trait 定义是一种将方法签名组合起来的方法，目的是定义一个实现某些目的所必需的行为的集合。
+    - `pub trait Summary{ fn summarize(&self)->String; fn...; fn ss()->String{String::from("hello")} }` & `impl Summary for Point1{ fn summary(&self)->String{.....} }` & `impl Summary for Point2{ fn summary(&self)->String{.....} }` & `point.summarize()`
+    - *coherence*/*orphanrule* : One restriction to note with trait implementations is that we can implement a trait on a type only if either the trait or the type is local to our crate.But we can’t implement external traits on external types.
+    - 默认实现允许调用相同 trait 中的其他方法，哪怕这些方法没有默认实现。Note that it isn’t possible to call the `default implementation` from an overriding implementation of that same method.
+    - `Traits as Parameters`：`pub fn notify(item:&impl Summary){.....item.summarize()}`-->`pub fn notify(item:&(impl Summary+Display)){....}`==`Trait Bound` Syntax==>`pub fn notify<T:Summary>(item:&T){....item.summarize()}`-->`pub fn notify<T:Summary>(item1:&T,item2:&T){...item.summarize()}`-->`pub fn notify<T:Summary+Display>(item:&T){....}`-->`fn some_function<T,U>(t:&T,u:&U)->i32 where T:Display+Clone,U:Clone+Debug{...}`
+    - `Returning Types that Implement Traits`：`fn returns_ss(...)->impl Summary{只能返回一个实现了Summary的类型}`
+    - `blanket implementations`：Implementations of a trait on any type that satisfies the trait bounds are called blanket implementations and are extensively used in the Rust standard library.`impl<T:Display+PartialOrd> Pair<T>{}`-->`impl<T:Display> ToString for T{..}`
+    - `trait`，`for`
 
 
 - Lifetimes
+    - lifetimes ensure that `references` are valid as long as we need them to be. every reference in Rust has a lifetime, which is the scope for which that reference is valid.其主要目的避免悬垂指针。
+    - lifetimes are a type of generic.
+    - `borrow checker`:比较作用域确保所有的借用都是有效的。
+    - `Lifetime Annotation Syntax`:`'`==>`&i32`,`&'a i32`,`&'a mut i32`
+    - `Generic Lifetimes in Functions`：`fn longest<'a>(x:&'a str,y:&'a str)->&'a str{...}`==>The concrete lifetime that is substituted for `'a` is the part of the scope of `x` that overlaps with the scope of `y`.==>Remember, when we specify the lifetime parameters in this function signature, we’re not changing the lifetimes of any values passed in or returned. Rather, we’re specifying that the borrow checker should reject any values that don’t adhere to these constraints.==>lifetime syntax is about connecting the lifetimes of various parameters and return values of functions. 
+    - `Lifetime Annotations in Struct Definitions`：`struct ImportantExcerpt<'a>{ part:&'a str, }`-->This annotation means an instance of ImportantExcerpt can’t outlive the reference it holds in its part field.
+    - `Lifetime Annotations in Method Definitions`：`impl<'a> ImportantExcerpt<'a>{ fn level(&self,aa:&str)->&str{...} }`
+    - The Static Lifetime：`'static`==>` let s: &'static str = "I have a static lifetime."; `==>this reference can live for the entire duration of the program. 
+    - Lifetime Elision
+        - Lifetimes on function or method parameters are called `input lifetimes`, and lifetimes on return values are called `output lifetimes`.
+        - lifetime elision rules:
+            - each parameter that is a reference gets its own lifetime parameter.
+            -  if there is exactly one `input lifetime` parameter, that lifetime is assigned to all `output lifetime` parameters: `fn foo<'a>(x: &'a i32) -> &'a i32`.
+            -  if there are multiple `input lifetime` parameters, but one of them is `&self` or `&mut self` because this is a method, the lifetime of self is assigned to all `output lifetime` parameters.
+    - Example:`fn longest_with_an_anno<'a,T>(x:&'a str,y:&'a str,ann:T,)->&'a
+    str where T:Display,{...}`
+
+15.Automated Tests
 
 
 
