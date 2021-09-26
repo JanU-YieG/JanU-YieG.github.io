@@ -134,7 +134,11 @@
     str where T:Display,{...}`
 
 15.Automated Tests
+- `#[test]`==>`#[should_panic]`==>`#[ignore]`==>`cargo test`-->`cargo test -h`==>`assert!`,`assert_eq!`,`assert_ne!`
+- `#[derive(PartialEq,Debug)]`
 
+- 文档测试
+- Each test is run in a new thread, and when the main thread sees that a test thread has died, the test is marked as failed. 
 
 
 
