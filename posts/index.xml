@@ -4,7 +4,14 @@
         <link>https://janu-yieg.github.io/posts/</link>
         <description>All Posts | Borer&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Fri, 24 Sep 2021 14:49:43 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Mon, 27 Sep 2021 15:58:09 &#43;0800</lastBuildDate><atom:link href="https://janu-yieg.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>窮</title>
+    <link>https://janu-yieg.github.io/qiong/</link>
+    <pubDate>Mon, 27 Sep 2021 15:58:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/qiong/</guid>
+    <description><![CDATA[窮&mdash;-穷 身居洞穴，身体被迫弯屈、不自由。 物质上困顿、不得志、贫困。 追究、终结、尽、完]]></description>
+</item><item>
     <title>Important Properties in Rust</title>
     <link>https://janu-yieg.github.io/important-properties-in-rust/</link>
     <pubDate>Fri, 24 Sep 2021 14:49:43 &#43;0800</pubDate>
@@ -85,14 +92,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://cdn5.maocdn.cn/img/2021/07/29/wp7334739-mix-colours-wallpapers.jpg" referrerpolicy="no-referrer">
             </div>专业相关的问题]]></description>
-</item><item>
-    <title>Docker</title>
-    <link>https://janu-yieg.github.io/docker/</link>
-    <pubDate>Wed, 21 Jul 2021 09:55:10 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/docker/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://cdn5.maocdn.cn/img/2021/08/05/docker-facebook.png" referrerpolicy="no-referrer">
-            </div>Docker常用命令解释及其注意事项]]></description>
 </item></channel>
 </rss>

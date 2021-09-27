@@ -18,7 +18,7 @@
 <meta name="twitter:title" content="Important Properties in Rust"/>
 <meta name="twitter:description" content="1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) &amp; reference &amp;"/>
 <meta name="application-name" content="Borer&#39;s blog">
-<meta name="apple-mobile-web-app-title" content="Borer&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/borer.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://janu-yieg.github.io/important-properties-in-rust/" /><link rel="prev" href="https://janu-yieg.github.io/xinzhili/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="Borer&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/borer.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://janu-yieg.github.io/important-properties-in-rust/" /><link rel="prev" href="https://janu-yieg.github.io/xinzhili/" /><link rel="next" href="https://janu-yieg.github.io/qiong/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  2984 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  3050 ,
         "url": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/","datePublished": "2021-09-24T14:49:43+08:00","dateModified": "2021-09-24T14:49:43+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Important Properties in Rust</h1><h2 class="single-subtitle">Rust重要特性</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2984 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;3050 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -337,6 +337,9 @@
 <li>Closures
 <ul>
 <li>Rust’s closures are anonymous functions you can save in a variable or pass as arguments to other functions.You can create the closure in one place and then call the closure to evaluate it in a different context. Unlike functions, closures can capture values from the scope in which they’re defined.</li>
+<li><code>|param1,param2|{...}</code>&ndash;&gt;<code>|param1:u32,param2|-&gt;u32{...}</code>&ndash;&gt;Closures don’t require you to annotate the types of the parameters or the return value like fn functions do.</li>
+<li><code>lazy evaluation</code>: All closures implement at least one of the traits: Fn, FnMut, or FnOnce</li>
+<li>we don’t want to call it if the result isn’t needed, and we still want to call it only once.</li>
 </ul>
 </li>
 </ul>
@@ -368,7 +371,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/xinzhili/" class="prev" rel="prev" title="心之力"><i class="fas fa-angle-left fa-fw"></i>心之力</a></div>
+    <div class="post-nav"><a href="/xinzhili/" class="prev" rel="prev" title="心之力"><i class="fas fa-angle-left fa-fw"></i>心之力</a>
+            <a href="/qiong/" class="next" rel="next" title="窮">窮<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="gitalk" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.

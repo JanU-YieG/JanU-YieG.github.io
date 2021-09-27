@@ -148,6 +148,9 @@
 17.Functional Language Features: Iterators and Closures
 - Closures
     - Rust’s closures are anonymous functions you can save in a variable or pass as arguments to other functions.You can create the closure in one place and then call the closure to evaluate it in a different context. Unlike functions, closures can capture values from the scope in which they’re defined.
+    - `|param1,param2|{...}`-->`|param1:u32,param2|->u32{...}`-->Closures don’t require you to annotate the types of the parameters or the return value like fn functions do. 
+    - `lazy evaluation`: All closures implement at least one of the traits: Fn, FnMut, or FnOnce
+    - we don’t want to call it if the result isn’t needed, and we still want to call it only once.
 
 
 
