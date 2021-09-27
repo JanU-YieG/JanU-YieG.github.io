@@ -167,6 +167,15 @@ summary: ""
 - 文档测试
 - Each test is run in a new thread, and when the main thread sees that a test thread has died, the test is marked as failed. 
 
+16.Command Line Program
+- `let args: Vec<String> = env::args().collect();`
+- `env::var("CASE_INSENSITIVE").is_err();`
+- `eprintln!`
+
+17.Functional Language Features: Iterators and Closures
+- Closures
+    - Rust’s closures are anonymous functions you can save in a variable or pass as arguments to other functions.You can create the closure in one place and then call the closure to evaluate it in a different context. Unlike functions, closures can capture values from the scope in which they’re defined.
+
 
 
 
@@ -181,3 +190,4 @@ summary: ""
 
 others:
 - `prelude`
+- Test Driven Development(TDD)
