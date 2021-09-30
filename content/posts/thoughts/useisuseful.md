@@ -3,7 +3,7 @@ title: "用才有用"
 subtitle: "在现实世界中没有用的知识不需要浪费时间和生命"
 date: 2021-08-18T13:51:03+08:00
 lastmod: 2021-08-18T13:51:03+08:00
-draft: false
+draft: true
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description:

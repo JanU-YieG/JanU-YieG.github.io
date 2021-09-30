@@ -176,8 +176,11 @@ summary: ""
 - Closures
     - Rust’s closures are anonymous functions you can save in a variable or pass as arguments to other functions.You can create the closure in one place and then call the closure to evaluate it in a different context. Unlike functions, closures can capture values from the scope in which they’re defined.
     - `|param1,param2|{...}`-->`|param1:u32,param2|->u32{...}`-->Closures don’t require you to annotate the types of the parameters or the return value like fn functions do. 
-    - `lazy evaluation`: All closures implement at least one of the traits: Fn, FnMut, or FnOnce
+    - `lazy evaluation`: All closures implement at least one of the traits: Fn, FnMut, or FnOnce.`struct Cacher<T> where T:Fn(u32)->u32{..}` `impl<T> Cacher<T> where T:Fn(u32)->u32{...}`
+    - closures have an additional capability that functions don’t have: they can capture their environment and access variables from the scope in which they’re defined.-->`FnOnce`,`FnMut`,`Fn`==>`move`
     - we don’t want to call it if the result isn’t needed, and we still want to call it only once.
+- Iterator
+    - An iterator is responsible for the logic of iterating over each item and determining when the sequence has finished.In Rust, iterators are lazy, meaning they have no effect until you call methods that consume the iterator to use it up. Iterators give you more flexibility to use the same logic with many different kinds of sequences, not just data structures you can index into, like vectors.
 
 
 
