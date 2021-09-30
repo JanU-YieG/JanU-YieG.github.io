@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  3050 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Rust, Rust Properties","wordcount":  3158 ,
         "url": "https:\/\/janu-yieg.github.io\/important-properties-in-rust\/","datePublished": "2021-09-24T14:49:43+08:00","dateModified": "2021-09-24T14:49:43+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,7 +118,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Important Properties in Rust</h1><h2 class="single-subtitle">Rust重要特性</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/rust/"><i class="far fa-folder fa-fw"></i>Rust</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;3050 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-24">2021-09-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;3158 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -338,8 +338,14 @@
 <ul>
 <li>Rust’s closures are anonymous functions you can save in a variable or pass as arguments to other functions.You can create the closure in one place and then call the closure to evaluate it in a different context. Unlike functions, closures can capture values from the scope in which they’re defined.</li>
 <li><code>|param1,param2|{...}</code>&ndash;&gt;<code>|param1:u32,param2|-&gt;u32{...}</code>&ndash;&gt;Closures don’t require you to annotate the types of the parameters or the return value like fn functions do.</li>
-<li><code>lazy evaluation</code>: All closures implement at least one of the traits: Fn, FnMut, or FnOnce</li>
+<li><code>lazy evaluation</code>: All closures implement at least one of the traits: Fn, FnMut, or FnOnce.<code>struct Cacher&lt;T&gt; where T:Fn(u32)-&gt;u32{..}</code> <code>impl&lt;T&gt; Cacher&lt;T&gt; where T:Fn(u32)-&gt;u32{...}</code></li>
+<li>closures have an additional capability that functions don’t have: they can capture their environment and access variables from the scope in which they’re defined.&ndash;&gt;<code>FnOnce</code>,<code>FnMut</code>,<code>Fn</code>==&gt;<code>move</code></li>
 <li>we don’t want to call it if the result isn’t needed, and we still want to call it only once.</li>
+</ul>
+</li>
+<li>Iterator
+<ul>
+<li>An iterator is responsible for the logic of iterating over each item and determining when the sequence has finished.In Rust, iterators are lazy, meaning they have no effect until you call methods that consume the iterator to use it up. Iterators give you more flexibility to use the same logic with many different kinds of sequences, not just data structures you can index into, like vectors.</li>
 </ul>
 </li>
 </ul>
