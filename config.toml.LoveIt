@@ -159,7 +159,8 @@ homePicture = "/blackarch.png"
           # Gravatar Email for preferred avatar in home page
           gravatarEmail = "janu.yieg.borer@gmail.com"
           # URL of avatar shown in home page
-          avatarURL = "/avatar.png"
+          # avatarURL = "/avatar.png"
+          avatarURL = "/borer.png"
           # title shown in home page (HTML format is supported)
           title= "Do one thing , and do it well !"
           # subtitle shown in home page
