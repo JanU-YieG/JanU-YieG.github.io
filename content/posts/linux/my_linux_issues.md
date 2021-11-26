@@ -76,7 +76,7 @@ QT_QPT_PLATFORM=xcb goldendict
 [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring sdma0 timeout, signaled seq=239, emitted seq=240
 drm:amdgpu_job_timrout ring gfx timeout but soft recovered
 ```
-**rsolved**:
+**solved**:
 the new linux kernel is bad compatibility for AGU,you can downgrade linux,linux-firmware,mesa:
 
 mesa: 21.0.3 2
@@ -103,7 +103,7 @@ Failed to get backlight or LED device 'backlight:acpi_video0': No such device
 systemd-backlight@backlight:acpi_video0.service: Failed with result 'exit-code'.
 Failed to start Load/Save Screen Backlight Brightness of backlight:acpi_video0.
 ```
-**resolved**:
+**solved**:
 adding the `acpi_backlight=vendor` in /etc/devault/grub into the line `GRUB_CMDLINE_LINUX_DEFAULT=`
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="acpi_backlight=vendor quiet"
@@ -113,7 +113,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_backlight=vendor quiet"
 ```
 Failed to set default locale
 ```
-**resolved**:
+**solved**:
 adding the following code to change the valiables about locale:`login shell` or `/etc/enviroment`
 ```
 LANG=en_US.UTF-8
@@ -134,6 +134,25 @@ LC_ALL="en_US.UTF-8"
 **issue**:
 
 sway中fcitx5中文输入法在alacritty中不显示界面的问题
-**resolved**:
+**solved**:
 
-在sway配置文件中启动alacritty使用`WAYLAND_DISPLAY=x11`
+~~在sway配置文件中启动alacritty使用 WAYLAND_DISPLAY=x11~~
+
+在sway中配置启动alacrittys使用
+`set $term WAYLAND_DISPLAY=wayland alacritty `
+    `bindsym $mod+Return exec $term`
+
+**issue**:
+
+sway(wayland协议)中安装了wl-clipboard后使用`wl-copy`报错：
+`Failed connect to wayland server`
+
+**solved**:
+
+添加环境变量：`WAYLAND_DISPLAY=wayland-1`
+ > 具体应该是当前使用的wayland序号
+ >
+ > 环境变量文件：/etc/enviroment
+ >
+ > 或者环境变量添加到登陆shell的配置文件中
+
