@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/my_linux_issues\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux-issues, linux","wordcount":  572 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux-issues, linux","wordcount":  593 ,
         "url": "https:\/\/janu-yieg.github.io\/my_linux_issues\/","datePublished": "2021-05-27T01:17:47+08:00","dateModified": "2021-05-27T01:17:47+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,7 +118,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">my linux issues</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a>&nbsp;<a href="/categories/hunt/"><i class="far fa-folder fa-fw"></i>Hunt</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-27">2021-05-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;572 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-27">2021-05-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;593 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -134,12 +134,24 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#arch-sway">arch sway</a></li>
+    <li><a href="#arch-sway">arch sway</a>
+      <ul>
+        <li><a href="#issue"><strong>issue:</strong></a></li>
+        <li><a href="#issue-1"><strong>issue</strong>:</a></li>
+        <li><a href="#issue-2"><strong>issue</strong></a></li>
+        <li><a href="#issuegoldendict-crashed-on-wayland"><strong>issue</strong>:goldendict crashed on wayland</a></li>
+        <li><a href="#issue-3"><strong>issue</strong>:</a></li>
+        <li><a href="#issue-4"><strong>issue</strong>:</a></li>
+        <li><a href="#issuefailed-to-set-default-locale"><strong>issue</strong>:Failed to set default locale</a></li>
+        <li><a href="#issuesway-alacritty-fcitx5中文输入法"><strong>issue</strong>:sway alacritty fcitx5中文输入法</a></li>
+        <li><a href="#issuewl-copy-failed-connect-to-wayland-server"><strong>issue</strong>:wl-copy Failed connect to wayland server</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="arch-sway">arch sway</h2>
 <p><strong>you can see the <a href="https://github.com/swaywm/sway/wiki" target="_blank" rel="noopener noreffer">sway wiki page</a></strong></p>
-<p><strong>issue:</strong></p>
+<h3 id="issue"><strong>issue:</strong></h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -170,8 +182,8 @@ write the following code in your <code>.bash_profile</code></p>
 fi
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>issue</strong>:
-can not change brightness
+</div><h3 id="issue-1"><strong>issue</strong>:</h3>
+<p>can not change brightness
 <strong>solved</strong>:
 you can use(please use the tools based the wayland protocol) the light to change brightness</p>
 <div class="highlight"><div class="chroma">
@@ -184,7 +196,7 @@ you can use(please use the tools based the wayland protocol) the light to change
 sudo light -A 10
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>issue</strong></p>
+</div><h3 id="issue-2"><strong>issue</strong></h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -206,7 +218,7 @@ add environment variables into /etc/environment:</p>
 </div><p>and install:
 qt5-wayland</p>
 <p>but some applications based X11 you should set the environment variable QT_QPT_PLATFORM like goldendict below</p>
-<p><strong>issue</strong>:goldendict crashed on wayland</p>
+<h3 id="issuegoldendict-crashed-on-wayland"><strong>issue</strong>:goldendict crashed on wayland</h3>
 <p>you can see <a href="https://wiki.archlinux.org/title/Wayland#Qt" target="_blank" rel="noopener noreffer">this page</a>
 <strong>solved</strong>:
 open goldendict use :</p>
@@ -218,7 +230,7 @@ open goldendict use :</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">QT_QPT_PLATFORM=xcb goldendict
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>issue</strong>:</p>
+</div><h3 id="issue-3"><strong>issue</strong>:</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -262,7 +274,7 @@ cp /boot/vmlinuz-linux $esp/
 </code></pre></td></tr></table>
 </div>
 </div><p>and then reboot</p>
-<p><strong>issue</strong>:</p>
+<h3 id="issue-4"><strong>issue</strong>:</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -285,7 +297,7 @@ adding the <code>acpi_backlight=vendor</code> in /etc/devault/grub into the line
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">GRUB_CMDLINE_LINUX_DEFAULT=&#34;acpi_backlight=vendor quiet&#34;
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>issue</strong>:</p>
+</div><h3 id="issuefailed-to-set-default-locale"><strong>issue</strong>:Failed to set default locale</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -330,14 +342,14 @@ LC_IDENTIFICATION=&#34;en_US.UTF-8&#34;
 LC_ALL=&#34;en_US.UTF-8&#34;
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>issue</strong>:</p>
+</div><h3 id="issuesway-alacritty-fcitx5中文输入法"><strong>issue</strong>:sway alacritty fcitx5中文输入法</h3>
 <p>sway中fcitx5中文输入法在alacritty中不显示界面的问题
 <strong>solved</strong>:</p>
 <p><del>在sway配置文件中启动alacritty使用 WAYLAND_DISPLAY=x11</del></p>
 <p>在sway中配置启动alacrittys使用
 <code>set $term WAYLAND_DISPLAY=wayland alacritty </code>
 <code>bindsym $mod+Return exec $term</code></p>
-<p><strong>issue</strong>:</p>
+<h3 id="issuewl-copy-failed-connect-to-wayland-server"><strong>issue</strong>:wl-copy Failed connect to wayland server</h3>
 <p>sway(wayland协议)中安装了wl-clipboard后使用<code>wl-copy</code>报错：
 <code>Failed connect to wayland server</code></p>
 <p><strong>solved</strong>:</p>

@@ -4,7 +4,7 @@
 
 **you can see the [sway wiki page](https://github.com/swaywm/sway/wiki)**
 
-**issue:**
+### **issue:**
 ```
 [sway-1.0-beta.2/sway/main.c:209] Unable to drop root (we shouldn't be able to restore it after setuid), refusing to start
 ```
@@ -20,7 +20,7 @@ if [ -z "${XDG_RUNTIME_DIR}" ]; then
 fi
 ```
 
-**issue**:
+### **issue**:
 can not change brightness
 **solved**:
 you can use(please use the tools based the wayland protocol) the light to change brightness
@@ -29,7 +29,7 @@ sudo light -U 10
 sudo light -A 10
 ```
 
-**issue**
+### **issue**
 ```
 Could not find the Qt platform plugin “wayland”
 ```
@@ -43,7 +43,7 @@ qt5-wayland
 
 but some applications based X11 you should set the environment variable QT_QPT_PLATFORM like goldendict below
 
-**issue**:goldendict crashed on wayland
+### **issue**:goldendict crashed on wayland
 
 you can see [this page](https://wiki.archlinux.org/title/Wayland#Qt)
 **solved**:
@@ -52,7 +52,7 @@ open goldendict use :
 QT_QPT_PLATFORM=xcb goldendict
 ```
 
-**issue**:
+### **issue**:
 ```
 [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring sdma0 timeout, signaled seq=239, emitted seq=240
 drm:amdgpu_job_timrout ring gfx timeout but soft recovered
@@ -78,7 +78,7 @@ cp /boot/vmlinuz-linux $esp/
 
 and then reboot
 
-**issue**:
+### **issue**:
 ```
 Failed to get backlight or LED device 'backlight:acpi_video0': No such device
 systemd-backlight@backlight:acpi_video0.service: Failed with result 'exit-code'.
@@ -90,7 +90,7 @@ adding the `acpi_backlight=vendor` in /etc/devault/grub into the line `GRUB_CMDL
 GRUB_CMDLINE_LINUX_DEFAULT="acpi_backlight=vendor quiet"
 ```
 
-**issue**:
+### **issue**:Failed to set default locale
 ```
 Failed to set default locale
 ```
@@ -112,7 +112,8 @@ LC_MEASUREMENT="en_US.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
 LC_ALL="en_US.UTF-8"
 ```
-**issue**:
+
+### **issue**:sway alacritty fcitx5中文输入法
 
 sway中fcitx5中文输入法在alacritty中不显示界面的问题
 **solved**:
@@ -123,7 +124,7 @@ sway中fcitx5中文输入法在alacritty中不显示界面的问题
 `set $term WAYLAND_DISPLAY=wayland alacritty `
     `bindsym $mod+Return exec $term`
 
-**issue**:
+### **issue**:wl-copy Failed connect to wayland server
 
 sway(wayland协议)中安装了wl-clipboard后使用`wl-copy`报错：
 `Failed connect to wayland server`
