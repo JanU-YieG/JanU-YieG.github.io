@@ -91,7 +91,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_backlight=vendor quiet"
 ```
 
 ### **issue**:Failed to set default locale
-```
+``
 Failed to set default locale
 ```
 **solved**:
