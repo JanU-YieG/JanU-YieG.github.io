@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/my_linux_issues\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux-issues, linux","wordcount":  414 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux-issues, linux","wordcount":  572 ,
         "url": "https:\/\/janu-yieg.github.io\/my_linux_issues\/","datePublished": "2021-05-27T01:17:47+08:00","dateModified": "2021-05-27T01:17:47+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">my linux issues</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a>&nbsp;<a href="/categories/hunt/"><i class="far fa-folder fa-fw"></i>Hunt</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-27">2021-05-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;414 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-27">2021-05-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;572 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -229,7 +229,7 @@ open goldendict use :</p>
 drm:amdgpu_job_timrout ring gfx timeout but soft recovered
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>rsolved</strong>:
+</div><p><strong>solved</strong>:
 the new linux kernel is bad compatibility for AGU,you can downgrade linux,linux-firmware,mesa:</p>
 <p>mesa: 21.0.3 2
 linux-firmware: 20210315.3568f96  2
@@ -275,7 +275,7 @@ systemd-backlight@backlight:acpi_video0.service: Failed with result &#39;exit-co
 Failed to start Load/Save Screen Backlight Brightness of backlight:acpi_video0.
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>resolved</strong>:
+</div><p><strong>solved</strong>:
 adding the <code>acpi_backlight=vendor</code> in /etc/devault/grub into the line <code>GRUB_CMDLINE_LINUX_DEFAULT=</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -294,7 +294,7 @@ adding the <code>acpi_backlight=vendor</code> in /etc/devault/grub into the line
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Failed to set default locale
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>resolved</strong>:
+</div><p><strong>solved</strong>:
 adding the following code to change the valiables about locale:<code>login shell</code> or <code>/etc/enviroment</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -332,8 +332,21 @@ LC_ALL=&#34;en_US.UTF-8&#34;
 </div>
 </div><p><strong>issue</strong>:</p>
 <p>sway中fcitx5中文输入法在alacritty中不显示界面的问题
-<strong>resolved</strong>:</p>
-<p>在sway配置文件中启动alacritty使用<code>WAYLAND_DISPLAY=x11</code></p>
+<strong>solved</strong>:</p>
+<p><del>在sway配置文件中启动alacritty使用 WAYLAND_DISPLAY=x11</del></p>
+<p>在sway中配置启动alacrittys使用
+<code>set $term WAYLAND_DISPLAY=wayland alacritty </code>
+<code>bindsym $mod+Return exec $term</code></p>
+<p><strong>issue</strong>:</p>
+<p>sway(wayland协议)中安装了wl-clipboard后使用<code>wl-copy</code>报错：
+<code>Failed connect to wayland server</code></p>
+<p><strong>solved</strong>:</p>
+<p>添加环境变量：<code>WAYLAND_DISPLAY=wayland-1</code></p>
+<blockquote>
+<p>具体应该是当前使用的wayland序号</p>
+<p>环境变量文件：/etc/enviroment</p>
+<p>或者环境变量添加到登陆shell的配置文件中</p>
+</blockquote>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
