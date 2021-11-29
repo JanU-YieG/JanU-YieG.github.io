@@ -268,3 +268,19 @@ $ docker run -d -P \
 - [Dockerfile 官方文档](https://docs.docker.com/engine/reference/builder/)
 - [Dockerfile 最佳实践文档](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
+
+### Others
+
+#### 更换国内源
+`vim /etc/docker/daemon.json`
+`
+{
+  "registry-mirrors": [
+    "https://hub-mirror.c.163.com",
+    "https://ustc-edu-cn.mirror.aliyuncs.com",
+    "https://ghcr.io",
+    "https://mirror.baidubce.com"
+  ]
+}
+`
+
