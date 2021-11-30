@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/docker\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "docker","wordcount":  3260 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "docker","wordcount":  3871 ,
         "url": "https:\/\/janu-yieg.github.io\/docker\/","datePublished": "2021-07-21T09:55:10+08:00","dateModified": "2021-07-21T09:55:10+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,8 +118,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Docker</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/docker/"><i class="far fa-folder fa-fw"></i>Docker</a>&nbsp;<a href="/categories/hunt/"><i class="far fa-folder fa-fw"></i>Hunt</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-21">2021-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;3260 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-21">2021-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;3871 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -272,6 +272,7 @@
         <li><a href="#others">Others</a>
           <ul>
             <li><a href="#更换国内源">更换国内源</a></li>
+            <li><a href="#docker-php-扩展安装">docker php 扩展安装</a></li>
           </ul>
         </li>
       </ul>
@@ -666,7 +667,27 @@ OverlayFS 类的 Union FS 等技术，对进程进行封装隔离，属于
 <h3 id="others">Others</h3>
 <h4 id="更换国内源">更换国内源</h4>
 <p><code>vim /etc/docker/daemon.json</code>
-<code>{ &quot;registry-mirrors&quot;: [ &quot;https://hub-mirror.c.163.com&quot;, &quot;https://ustc-edu-cn.mirror.aliyuncs.com&quot;, &quot;https://ghcr.io&quot;, &quot;https://mirror.baidubce.com&quot; ] }</code></p></div><div class="post-footer" id="post-footer">
+<code>{ &quot;registry-mirrors&quot;: [ &quot;https://hub-mirror.c.163.com&quot;, &quot;https://ustc-edu-cn.mirror.aliyuncs.com&quot;, &quot;https://ghcr.io&quot;, &quot;https://mirror.baidubce.com&quot; ] }</code></p>
+<h4 id="docker-php-扩展安装">docker php 扩展安装</h4>
+<ol>
+<li>通过pecl方式安装</li>
+<li>通过php容器中自带的特殊命令安装：
+<blockquote>
+<p>docker-php-source:在php容器中创建/usr/src/php目录，并在其中存放一些自带文件，php扩展源吗都在/usr/src/php/ext中</p>
+<p>格式：docker-php-source extract | delete</p>
+<p>说明：extract创建并初始化/usr/src/php目录，delete：删除/usr/src/php目录</p>
+<p>docker-php-ext-enable:启动php扩展，pecl安装php扩展默认不启动扩展，如果想要使用扩展必须在php.ini中配置。该命令则自动给我们启动php扩展不需要修改php.ini配置文件.</p>
+<p><code>ls 查看现有可以启动的扩展：/usr/local/lib/php/extensions/no-debug-non-zts-xxxxxx</code>
+查看redis扩展是否启动：php -m | grep redis
+启动redis扩展：docker-php-ext-enable redis</p>
+<p>docker-php-ext-install:安装并启动php扩展
+格式：docker-php-ext-install &ldquo;源吗包目录名&rdquo;
+说明：&ldquo;源码包&quot;需要放在/usr/src/php/ext下
+卸载：直接删除/usr/local/etc/php/conf.d对应的配置文件即可</p>
+<p>docker-php-ext-configure:自定义安装的php扩展。</p>
+</blockquote>
+</li>
+</ol></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
