@@ -307,3 +307,27 @@ $ docker run -d -P \
   ]
 }
 `
+
+#### docker php 扩展安装
+1. 通过pecl方式安装
+2. 通过php容器中自带的特殊命令安装：
+    > docker-php-source:在php容器中创建/usr/src/php目录，并在其中存放一些自带文件，php扩展源吗都在/usr/src/php/ext中
+    >
+    > 格式：docker-php-source extract | delete
+    >
+    > 说明：extract创建并初始化/usr/src/php目录，delete：删除/usr/src/php目录
+    >
+    > docker-php-ext-enable:启动php扩展，pecl安装php扩展默认不启动扩展，如果想要使用扩展必须在php.ini中配置。该命令则自动给我们启动php扩展不需要修改php.ini配置文件.
+    >
+    > `ls
+    > 查看现有可以启动的扩展：/usr/local/lib/php/extensions/no-debug-non-zts-xxxxxx`
+    > 查看redis扩展是否启动：php -m | grep redis
+    > 启动redis扩展：docker-php-ext-enable redis
+    >
+    > docker-php-ext-install:安装并启动php扩展
+    > 格式：docker-php-ext-install "源吗包目录名"
+    > 说明："源码包"需要放在/usr/src/php/ext下
+    > 卸载：直接删除/usr/local/etc/php/conf.d对应的配置文件即可
+    > 
+    > docker-php-ext-configure:自定义安装的php扩展。
+
