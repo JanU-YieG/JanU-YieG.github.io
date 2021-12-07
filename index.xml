@@ -4,9 +4,16 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Mon, 06 Dec 2021 23:01:55 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Tue, 07 Dec 2021 23:32:42 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>他律，自律，自觉，觉他，觉悟</title>
+    <link>https://janu-yieg.github.io/talvzilvzijuejueta/</link>
+    <pubDate>Tue, 07 Dec 2021 23:32:42 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/talvzilvzijuejueta/</guid>
+    <description><![CDATA[总说 不得不承认我们的语言把对人的约束区分的比较清楚，由他人到自己再到意再到心再到空性无为很是受用。 各词解释 他律： 狭义来说，他律指接受他人约束]]></description>
+</item><item>
     <title>解决问题</title>
     <link>https://janu-yieg.github.io/solved-problems/</link>
     <pubDate>Mon, 06 Dec 2021 23:01:55 &#43;0800</pubDate>
@@ -89,14 +96,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://s3.jpg.cm/2021/08/16/IcCC4C.jpg" referrerpolicy="no-referrer">
             </div>]]></description>
-</item><item>
-    <title>如何阅读一本书</title>
-    <link>https://janu-yieg.github.io/study_manner/</link>
-    <pubDate>Sat, 07 Aug 2021 22:52:09 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/study_manner/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://s3.jpg.cm/2021/08/07/IA0BF2.jpg" referrerpolicy="no-referrer">
-            </div>如何阅读一本书记录]]></description>
 </item></channel>
 </rss>
