@@ -173,7 +173,7 @@ homePicture = "/blackarch.png"
           disclaimer = ""
         # Home page posts
         [languages.en.params.home.posts]
-          enable = true
+          enable = false
           # enable = false
           # special amount of posts in each home posts page
           paginate = 4
