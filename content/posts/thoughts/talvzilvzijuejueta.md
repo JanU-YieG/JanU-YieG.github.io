@@ -3,7 +3,7 @@ title: "他律，自律，自觉，觉他，觉悟"
 subtitle: "这些词语的理解"
 date: 2021-12-07T23:32:42+08:00
 lastmod: 2021-12-07T23:32:42+08:00
-draft: false
+draft: true
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description:

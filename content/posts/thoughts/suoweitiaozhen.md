@@ -3,7 +3,7 @@ title: "所谓挑战"
 subtitle: "什么是挑战？该有这个概念么？还是无明众生对无明众生的无明之言"
 date: 2021-12-10T17:26:51+08:00
 lastmod: 2021-12-10T17:26:51+08:00
-draft: false
+draft: true
 author: "Borer"
 authorLink: "https://github.com/JanU-YieG"
 description:
