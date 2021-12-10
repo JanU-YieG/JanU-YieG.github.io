@@ -4,30 +4,9 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Fri, 10 Dec 2021 17:26:51 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Sat, 04 Dec 2021 22:23:00 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>所谓挑战</title>
-    <link>https://janu-yieg.github.io/suoweitiaozhen/</link>
-    <pubDate>Fri, 10 Dec 2021 17:26:51 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/suoweitiaozhen/</guid>
-    <description><![CDATA[前言 当你仔细思考我国很多词语时，发现不简单，里面所包含的思想，文字本身的意思，不简单，譬如：觉悟，自在，菩提，菩萨，智慧。语言表达思想，但并]]></description>
-</item><item>
-    <title>他律，自律，自觉，觉他，觉悟</title>
-    <link>https://janu-yieg.github.io/talvzilvzijuejueta/</link>
-    <pubDate>Tue, 07 Dec 2021 23:32:42 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/talvzilvzijuejueta/</guid>
-    <description><![CDATA[总说 不得不承认我们的语言把对人的约束区分的比较清楚，由他人到自己再到意再到心再到空性无为很是受用。 各词解释 他律： 狭义来说，他律指接受他人约束]]></description>
-</item><item>
-    <title>解决问题</title>
-    <link>https://janu-yieg.github.io/solved-problems/</link>
-    <pubDate>Mon, 06 Dec 2021 23:01:55 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/solved-problems/</guid>
-    <description><![CDATA[人活在这天地之间，一定会遇到走不通或艰难而行的路。这也便是我相和非我相之间产生矛盾，便我从法中便产生情愫，称之遇到问题。当如此时应该有何种意]]></description>
-</item><item>
     <title>IT技术更新频繁的想法</title>
     <link>https://janu-yieg.github.io/it-new-technology-think/</link>
     <pubDate>Sat, 04 Dec 2021 22:23:00 &#43;0800</pubDate>
@@ -94,5 +73,32 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://s3.jpg.cm/2021/08/17/IcxxCR.jpg" referrerpolicy="no-referrer">
             </div>前言 任何事物都不应该理解为真理，只是在其实践中对自己有所用的才拿来使用，有更好的就用更好的，本就没有什么真理，所谓的真理也仅仅是当前环境里最]]></description>
+</item><item>
+    <title>共产党宣言</title>
+    <link>https://janu-yieg.github.io/gongchandangxuanyan/</link>
+    <pubDate>Mon, 16 Aug 2021 22:21:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/gongchandangxuanyan/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://s3.jpg.cm/2021/08/16/IcCC4C.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>如何阅读一本书</title>
+    <link>https://janu-yieg.github.io/study_manner/</link>
+    <pubDate>Sat, 07 Aug 2021 22:52:09 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/study_manner/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://s3.jpg.cm/2021/08/07/IA0BF2.jpg" referrerpolicy="no-referrer">
+            </div>如何阅读一本书记录]]></description>
+</item><item>
+    <title>Cs Problems</title>
+    <link>https://janu-yieg.github.io/cs-problems/</link>
+    <pubDate>Thu, 29 Jul 2021 13:58:06 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/cs-problems/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://cdn5.maocdn.cn/img/2021/07/29/wp7334739-mix-colours-wallpapers.jpg" referrerpolicy="no-referrer">
+            </div>专业相关的问题]]></description>
 </item></channel>
 </rss>
