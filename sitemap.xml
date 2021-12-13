@@ -2,12 +2,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://janu-yieg.github.io/it-new-technology-think/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/it-new-technology-think/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://janu-yieg.github.io/laravel/</loc><lastmod>2021-11-24T13:36:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://janu-yieg.github.io/qiong/</loc><lastmod>2021-09-27T15:58:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/important-properties-in-rust/</loc><lastmod>2021-09-24T14:49:43&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/xinzhili/</loc><lastmod>2021-09-14T10:39:07&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/dahuaxiyouzhixianlvqiyuan/</loc><lastmod>2021-09-10T11:40:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://janu-yieg.github.io/zhiyanpianyu/</loc><lastmod>2021-08-18T17:05:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/ruhegaoxiaoxuexi/</loc><lastmod>2021-08-17T09:29:20&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/gongchandangxuanyan/</loc><lastmod>2021-08-16T22:21:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/study_manner/</loc><lastmod>2021-08-07T22:52:09&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -31,13 +32,13 @@
             <loc>https://janu-yieg.github.io/xinxue/</loc><lastmod>2021-02-24T13:22:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/what-should-know-about-shell-script/</loc><lastmod>2021-01-20T10:01:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://janu-yieg.github.io/hugo-generate-site/</loc><lastmod>2021-01-08T11:18:55&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://janu-yieg.github.io/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/categories/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/categories/cs/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/posts/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/tags/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/categories/thouthgs/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://janu-yieg.github.io/tags/%E6%8A%80%E6%9C%AF%E5%8F%98%E5%8C%96%E6%83%B3%E6%B3%95/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://janu-yieg.github.io/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://janu-yieg.github.io/categories/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://janu-yieg.github.io/categories/cs/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://janu-yieg.github.io/posts/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://janu-yieg.github.io/tags/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://janu-yieg.github.io/categories/thouthgs/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://janu-yieg.github.io/tags/%E6%8A%80%E6%9C%AF%E5%8F%98%E5%8C%96%E6%83%B3%E6%B3%95/</loc><lastmod>2021-12-04T22:23:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://janu-yieg.github.io/tags/laravel/</loc><lastmod>2021-11-24T13:36:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://janu-yieg.github.io/tags/php/</loc><lastmod>2021-11-24T13:36:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://janu-yieg.github.io/categories/php/</loc><lastmod>2021-11-24T13:36:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
