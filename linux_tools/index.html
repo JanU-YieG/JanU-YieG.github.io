@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/janu-yieg.github.io\/linux_tools\/"
-        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, linux-tools","wordcount":  73 ,
+        },"image": ["https:\/\/janu-yieg.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, linux-tools","wordcount":  163 ,
         "url": "https:\/\/janu-yieg.github.io\/linux_tools\/","datePublished": "2021-06-11T16:45:59+08:00","dateModified": "2021-06-11T16:45:59+08:00","license": "borer","publisher": {
             "@type": "Organization",
             "name": "borer","logo": "https:\/\/janu-yieg.github.io\/borer.png"},"author": {
@@ -118,7 +118,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Linux 应用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/JanU-YieG" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Borer</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a>&nbsp;<a href="/categories/linux-tools/"><i class="far fa-folder fa-fw"></i>linux-tools</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-11">2021-06-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;73 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-11">2021-06-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;163 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -139,6 +139,7 @@
       <ul>
         <li><a href="#i3x">i3(X)</a></li>
         <li><a href="#swaywayland">sway(wayland)</a></li>
+        <li><a href="#teamviewer">teamviewer</a></li>
       </ul>
     </li>
   </ul>
@@ -195,6 +196,14 @@
 <h2 id="linux桌面环境i3x-or-swaywaylandxwayland">Linux桌面环境(i3(X) OR sway(wayland/xwayland))</h2>
 <h3 id="i3x">i3(X)</h3>
 <h3 id="swaywayland">sway(wayland)</h3>
+<h3 id="teamviewer">teamviewer</h3>
+<ol>
+<li>Unit teamviewerd.service not found.</li>
+</ol>
+<ul>
+<li>输入：<code>sudo /opt/teamviewer/tv_bin/teamviewerd -d</code>直接重启</li>
+<li>或者想要使用：<code>sudo teamviewer --daemon stop/start/restart</code>，则需要建立teamviewer启动脚本到systemd管理中:<code>sudo ln -s /opt/teamviewer/tv_bin/script/teamviewerd.service /etc/systemd/system/teamviewerd.service</code></li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
