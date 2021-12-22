@@ -70,3 +70,8 @@ summary: "记录一些我日常使用的linux工具"
 
 
 ### sway(wayland)
+
+### teamviewer
+1. Unit teamviewerd.service not found.
+- 输入：`sudo /opt/teamviewer/tv_bin/teamviewerd -d`直接重启
+- 或者想要使用：`sudo teamviewer --daemon stop/start/restart`，则需要建立teamviewer启动脚本到systemd管理中:`sudo ln -s /opt/teamviewer/tv_bin/script/teamviewerd.service /etc/systemd/system/teamviewerd.service`
