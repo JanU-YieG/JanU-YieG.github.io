@@ -162,9 +162,11 @@ homePicture = "/blackarch.png"
           # avatarURL = "/avatar.png"
           avatarURL = "/borer.png"
           # title shown in home page (HTML format is supported)
-          title= "Do one thing , and do it well !"
+          # title= "Do one thing , and do it well !"
+          title= "Truth , Regularity , Why"
           # subtitle shown in home page
-          subtitle= "Keep Simple, Keep Stupid !"
+          # subtitle= "Keep Simple, Keep Stupid !"
+          subtitle= "The First Principle"
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
