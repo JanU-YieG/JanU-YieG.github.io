@@ -248,6 +248,7 @@ adding the pub keyword.
     - The second rule is if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters
     - The third rule is if there are multiple input lifetime parameters, but one of them is &self or &mut self because this is a method, the lifetime of self is assigned to all output lifetime parameters. 
 - One special lifetime we need to discuss is 'static, which means that this reference can live for the entire duration of the program. 
+    -  Lifetimes are a type of generic.
 
 ## Automated Tests
 - typically perform three actions:
