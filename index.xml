@@ -4,9 +4,23 @@
         <link>https://janu-yieg.github.io/</link>
         <description>个人分享记录</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>janu.yieg.borer@gmail.com (borer)</managingEditor>
-            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Tue, 15 Feb 2022 14:24:13 &#43;0800</lastBuildDate>
+            <webMaster>janu.yieg.borer@gmail.com (borer)</webMaster><copyright>borer</copyright><lastBuildDate>Wed, 16 Feb 2022 11:01:44 &#43;0800</lastBuildDate>
             <atom:link href="https://janu-yieg.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>浅义理解React</title>
+    <link>https://janu-yieg.github.io/understand-react/</link>
+    <pubDate>Wed, 16 Feb 2022 11:01:44 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/understand-react/</guid>
+    <description><![CDATA[State &amp; 生命周期 &amp; 执行顺序 执行顺序 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 class Test extends React.Component { constructor(props) { super(props); this.state = { date: new Date() }; } componentDidMount() { this.timerId = setInterval(() =&gt; this.tick(), 1000); } componentWillUnmount() { clearInterval(this.timerId); } tick()]]></description>
+</item><item>
+    <title>面向对象与类和原型链</title>
+    <link>https://janu-yieg.github.io/class_and_prototype/</link>
+    <pubDate>Tue, 15 Feb 2022 14:26:39 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://janu-yieg.github.io/class_and_prototype/</guid>
+    <description><![CDATA[面向对象 对象是指：数据和在这些数据上进行的操作的集合。 面向对象的编程范式在这里不多赘述 原型链 ES6的class 参考文档 ES6类 原型链]]></description>
+</item><item>
     <title>Now Important</title>
     <link>https://janu-yieg.github.io/now_important/</link>
     <pubDate>Tue, 15 Feb 2022 14:24:13 &#43;0800</pubDate>
@@ -74,23 +88,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="https://s3.jpg.cm/2021/08/12/IXvMjt.jpg" referrerpolicy="no-referrer">
             </div>1.mutable &amp; immutable &amp; Shadowing &amp; const 2.Statements &amp; Expressions &amp; Rust is expression-based language. 3.let ..if.. 4.loop label &amp; break/continue expression/loop label 5.for..in.. 6.unit type(()) 7.Ownership Ownership Rules Each value in Rust has a variable that&rsquo;s called its owner. There can only be one owner at a time. When the owner goes out of scope, the value will be dropped. move &amp; clone &amp; copy(Copy trait) &amp; reference &amp;]]></description>
-</item><item>
-    <title>心之力</title>
-    <link>https://janu-yieg.github.io/xinzhili/</link>
-    <pubDate>Tue, 14 Sep 2021 10:39:07 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/xinzhili/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://s3.jpg.cm/2021/09/14/Irc2EC.jpg" referrerpolicy="no-referrer">
-            </div>宇宙即我心，我心即宇宙。细微至发梢，宏大至天地。世界、宇宙乃至万物皆为思维心力所驱使。博古观今，尤知人类之所以为世间万物之灵长，实为天地间心]]></description>
-</item><item>
-    <title>大话西游之仙履奇缘</title>
-    <link>https://janu-yieg.github.io/dahuaxiyouzhixianlvqiyuan/</link>
-    <pubDate>Fri, 10 Sep 2021 11:40:39 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://janu-yieg.github.io/dahuaxiyouzhixianlvqiyuan/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="https://s3.jpg.cm/2021/09/10/IS9BeS.jpg" referrerpolicy="no-referrer">
-            </div>不爱而得，失去而爱，又遇而爱前，爱而不可得。]]></description>
 </item></channel>
 </rss>
