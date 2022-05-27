@@ -5,7 +5,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: false
 author: "Borer"
-authorLink: "https://github.com/JanU-YieG"
+authorLink: "https://github.com/Borer-Borer"
 description:
 hiddenFromHomePage: false
 hiddenFromSearch: false
